@@ -2855,23 +2855,39 @@ const Animation = () => {
     transition: 'opacity 0.5s ease-in-out' // Add a transition for smooth animation
   }} >
 
-            <line x1="60.52" y1="444.41" x2="60.52" y2="508" style={{fill: 'none', stroke: 'rgb(243, 126, 71)', strokeDasharray: '0, 0, 3.11, 3.11', strokeLinecap: 'round', strokeMiterlimit: 10, strokeDashoffset: "17px"}}></line>
-            <line x1="121.64" y1="459.66" x2="121.64" y2="524" style={{fill: 'none', stroke: 'rgb(243, 126, 71)', strokeDasharray: '0, 0, 3.11, 3.11', strokeLinecap: 'round', strokeMiterlimit: 10, strokeDashoffset: "17px"}}></line>
-            <line x1="183.3" y1="475.11" x2="183.3" y2="539" style={{fill: 'none', stroke: 'rgb(243, 126, 71)', strokeDasharray: '0, 0, 3.11, 3.11', strokeLinecap: 'round', strokeMiterlimit: 10, strokeDashoffset: "17px"}}></line>
-            <line x1="244" y1="489.62" x2="244" y2="554" style={{fill: 'none', stroke: 'rgb(243, 126, 71)', strokeDasharray: '0, 0, 3.11, 3.11', strokeLinecap: 'round', strokeMiterlimit: 10, strokeDashoffset: "17px"}}></line>
-            <line x1="304.99" y1="489.62" x2="304.99" y2="554" style={{fill: 'none', stroke: 'rgb(243, 126, 71)', strokeDasharray: '0, 0, 3.11, 3.11', strokeLinecap: 'round', strokeMiterlimit: 10, strokeDashoffset: "17px"}}></line>
-            <line x1="366.1" y1="475.11" x2="366.1" y2="539" style={{fill: 'none', stroke: 'rgb(243, 126, 71)', strokeDasharray: '0, 0, 3.11, 3.11', strokeLinecap: 'round', strokeMiterlimit: 10, strokeDashoffset: "17px"}}></line>
-            <line x1="427.22" y1="461.15" x2="427.22" y2="525" style={{fill: 'none', stroke: 'rgb(243, 126, 71)', strokeDasharray: '0, 0, 3.11, 3.11', strokeLinecap: 'round', strokeMiterlimit: 10, strokeDashoffset: "17px"}}></line>
-            <line x1="488.34" y1="447.2" x2="488.34" y2="510" style={{fill: 'none', stroke: 'rgb(243, 126, 71)', strokeDasharray: '0, 0, 3.11, 3.11', strokeLinecap: 'round', strokeMiterlimit: 10, strokeDashoffset: "17px"}}></line>
+            <line x1="60.52" y1="444.41" x2="60.52" y2="508" style={{fill: 'none', stroke: 'rgb(243, 126, 71)', strokeDasharray: '0, 0, 3.11, 3.11', strokeLinecap: 'round', strokeMiterlimit: 10, strokeDashoffset: "17px",
+               animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></line>
+            <line x1="121.64" y1="459.66" x2="121.64" y2="524" style={{fill: 'none', stroke: 'rgb(243, 126, 71)', strokeDasharray: '0, 0, 3.11, 3.11', strokeLinecap: 'round', strokeMiterlimit: 10, strokeDashoffset: "17px",
+               animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></line>
+            <line x1="183.3" y1="475.11" x2="183.3" y2="539" style={{fill: 'none', stroke: 'rgb(243, 126, 71)', strokeDasharray: '0, 0, 3.11, 3.11', strokeLinecap: 'round', strokeMiterlimit: 10, strokeDashoffset: "17px",
+               animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></line>
+            <line x1="244" y1="489.62" x2="244" y2="554" style={{fill: 'none', stroke: 'rgb(243, 126, 71)', strokeDasharray: '0, 0, 3.11, 3.11', strokeLinecap: 'round', strokeMiterlimit: 10, strokeDashoffset: "17px",
+               animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></line>
+            <line x1="304.99" y1="489.62" x2="304.99" y2="554" style={{fill: 'none', stroke: 'rgb(243, 126, 71)', strokeDasharray: '0, 0, 3.11, 3.11', strokeLinecap: 'round', strokeMiterlimit: 10, strokeDashoffset: "17px",
+               animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></line>
+            <line x1="366.1" y1="475.11" x2="366.1" y2="539" style={{fill: 'none', stroke: 'rgb(243, 126, 71)', strokeDasharray: '0, 0, 3.11, 3.11', strokeLinecap: 'round', strokeMiterlimit: 10, strokeDashoffset: "17px",
+               animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></line>
+            <line x1="427.22" y1="461.15" x2="427.22" y2="525" style={{fill: 'none', stroke: 'rgb(243, 126, 71)', strokeDasharray: '0, 0, 3.11, 3.11', strokeLinecap: 'round', strokeMiterlimit: 10, strokeDashoffset: "17px",
+               animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></line>
+            <line x1="488.34" y1="447.2" x2="488.34" y2="510" style={{fill: 'none', stroke: 'rgb(243, 126, 71)', strokeDasharray: '0, 0, 3.11, 3.11', strokeLinecap: 'round', strokeMiterlimit: 10, strokeDashoffset: "17px",
+               animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></line>
             
-            <polyline points="485.02 516.69 488.37 513.33 491.73 516.69" style={{fill: 'none',stroke: '#f37e47', strokeLinecap: 'round', strokeMiterlimit: 10}}></polyline>
-            <polyline points="423.71 530.64 427.07 527.28 430.42 530.64" style={{fill: 'none',stroke: '#f37e47', strokeLinecap: 'round', strokeMiterlimit: 10}}></polyline>
-            <polyline points="362.69 544.59 366.05 541.24 369.4 544.59" style={{fill: 'none',stroke: '#f37e47', strokeLinecap: 'round', strokeMiterlimit: 10}}></polyline>
-            <polyline points="301.57 558.83 304.93 555.47 308.28 558.83" style={{fill: 'none',stroke: '#f37e47', strokeLinecap: 'round', strokeMiterlimit: 10}}></polyline>
-            <polyline points="240.46 559.01 243.81 555.66 247.17 559.01" style={{fill: 'none',stroke: '#f37e47', strokeLinecap: 'round', strokeMiterlimit: 10}}></polyline>
-            <polyline points="179.34 544.97 182.7 541.61 186.05 544.97" style={{fill: 'none',stroke: '#f37e47', strokeLinecap: 'round', strokeMiterlimit: 10}}></polyline>
-            <polyline points="118.23 529.34 121.58 525.98 124.94 529.34" style={{fill: 'none',stroke: '#f37e47', strokeLinecap: 'round', strokeMiterlimit: 10}}></polyline>
-            <polyline points="57.02 513.99 60.37 510.63 63.73 513.99" style={{fill: 'none',stroke: '#f37e47', strokeLinecap: 'round', strokeMiterlimit: 10}}></polyline>
+            <polyline points="485.02 516.69 488.37 513.33 491.73 516.69" style={{fill: 'none',stroke: '#f37e47', strokeLinecap: 'round', strokeMiterlimit: 10,
+               animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></polyline>
+            <polyline points="423.71 530.64 427.07 527.28 430.42 530.64" style={{fill: 'none',stroke: '#f37e47', strokeLinecap: 'round', strokeMiterlimit: 10,
+               animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></polyline>
+            <polyline points="362.69 544.59 366.05 541.24 369.4 544.59" style={{fill: 'none',stroke: '#f37e47', strokeLinecap: 'round', strokeMiterlimit: 10,
+               animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></polyline>
+            <polyline points="301.57 558.83 304.93 555.47 308.28 558.83" style={{fill: 'none',stroke: '#f37e47', strokeLinecap: 'round', strokeMiterlimit: 10,
+               animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></polyline>
+            <polyline points="240.46 559.01 243.81 555.66 247.17 559.01" style={{fill: 'none',stroke: '#f37e47', strokeLinecap: 'round', strokeMiterlimit: 10,
+               animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></polyline>
+            <polyline points="179.34 544.97 182.7 541.61 186.05 544.97" style={{fill: 'none',stroke: '#f37e47', strokeLinecap: 'round', strokeMiterlimit: 10,
+               animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></polyline>
+            <polyline points="118.23 529.34 121.58 525.98 124.94 529.34" style={{fill: 'none',stroke: '#f37e47', strokeLinecap: 'round', strokeMiterlimit: 10,
+               animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></polyline>
+            <polyline points="57.02 513.99 60.37 510.63 63.73 513.99" style={{fill: 'none',stroke: '#f37e47', strokeLinecap: 'round', strokeMiterlimit: 10,
+               animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></polyline>
         </g>
 
         <g class="labels" style={{opacity: 1, visibility: 'inherit',}} className={currentIndex === 0 ? 'solution-path-labels-active' : 'solution-path-labels-inactive'}>
@@ -3178,14 +3194,22 @@ const Animation = () => {
         <g class="vendor-arrows vendor-arrows-top" filter="url(#filter-vendor-arrows)" style={{
     opacity: currentIndex === 8 ? 0.25 : 1,
     transition: 'opacity 0.5s ease-in-out'}}>
-            <line x1="60.61" y1="394" x2="60.61" y2="429" style={{fill: 'none', stroke: 'rgb(243, 126, 71', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '9px'}}></line>
-            <line x1="121.72" y1="410" x2="121.72" y2="444" style={{fill: 'none', stroke: 'rgb(243, 126, 71', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '9px'}}></line>
-            <line x1="182.84" y1="425" x2="182.84" y2="458" style={{fill: 'none', stroke: 'rgb(243, 126, 71', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '9px'}}></line>
-            <line x1="243.96" y1="440" x2="243.96" y2="471" style={{fill: 'none', stroke: 'rgb(243, 126, 71', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '9px'}}></line>
-            <line x1="305.07" y1="440" x2="305.07" y2="472" style={{fill: 'none', stroke: 'rgb(243, 126, 71', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '9px'}}></line>
-            <line x1="366.19" y1="425" x2="366.19" y2="456" style={{fill: 'none', stroke: 'rgb(243, 126, 71', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '9px'}}></line>
-            <line x1="427.31" y1="412" x2="427.31" y2="442" style={{fill: 'none', stroke: 'rgb(243, 126, 71', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '9px'}}></line>
-            <line x1="488.42" y1="397" x2="488.42" y2="426" style={{fill: 'none', stroke: 'rgb(243, 126, 71', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '9px'}}></line>
+            <line x1="60.61" y1="394" x2="60.61" y2="429" style={{fill: 'none', stroke: 'rgb(243, 126, 71', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '9px', 
+               animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></line>
+            <line x1="121.72" y1="410" x2="121.72" y2="444" style={{fill: 'none', stroke: 'rgb(243, 126, 71', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '9px',
+               animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></line>
+            <line x1="182.84" y1="425" x2="182.84" y2="458" style={{fill: 'none', stroke: 'rgb(243, 126, 71', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '9px',
+               animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></line>
+            <line x1="243.96" y1="440" x2="243.96" y2="471" style={{fill: 'none', stroke: 'rgb(243, 126, 71', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '9px',
+               animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></line>
+            <line x1="305.07" y1="440" x2="305.07" y2="472" style={{fill: 'none', stroke: 'rgb(243, 126, 71', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '9px',
+               animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></line>
+            <line x1="366.19" y1="425" x2="366.19" y2="456" style={{fill: 'none', stroke: 'rgb(243, 126, 71', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '9px',
+               animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></line>
+            <line x1="427.31" y1="412" x2="427.31" y2="442" style={{fill: 'none', stroke: 'rgb(243, 126, 71', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '9px',
+               animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></line>
+            <line x1="488.42" y1="397" x2="488.42" y2="426" style={{fill: 'none', stroke: 'rgb(243, 126, 71', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '9px',
+               animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></line>
 
             <polyline points="57.29 394.19 60.64 390.83 64 394.19" style={{fill: 'none', stroke: '#f37e47', strokeLinecap: 'round', strokeMiterlimit: 10}}></polyline>
             <polyline points="118.4 409.44 121.76 406.09 125.11 409.44" style={{fill: 'none', stroke: '#f37e47', strokeLinecap: 'round', strokeMiterlimit: 10}}></polyline>
@@ -3335,7 +3359,7 @@ const Animation = () => {
                 <path d="m536.5,188.71c2.31-.01,4.18-1.9,4.17-4.21-.01-2.31-1.9-4.18-4.21-4.17-2.31.01-4.18,1.9-4.17,4.21.01,2.31,1.9,4.18,4.21,4.17Zm-2.64-6.78c.69-.7,1.62-1.09,2.6-1.09h.02c2.02,0,3.67,1.64,3.69,3.67,0,.98-.37,1.91-1.07,2.61-.69.7-1.62,1.09-2.6,1.09h-.02c-.98,0-1.9-.38-2.59-1.07-.7-.69-1.09-1.62-1.09-2.6s.37-1.91,1.07-2.61Z" style={{fill: '#fff', strokeWidth: 0,}}></path>
             </g>
             <g>
-                <line x1="333.1" y1="291.06" x2="333.1" y2="292.56" style={{fill: "none", stroke: '#f56682', strokeLinecap: "round", strokeMiterlimit: 10,}}></line>
+                <line x1="333.1" y1="291.06" x2="333.1" y2="292.56" style={{fill: "none", stroke: '#f56682', strokeLinecap: "round", strokeMiterlimit: 10, }}></line>
                 <line x1="333.1" y1="295.39" x2="333.11" y2="333.63" style={{fill: 'none', stroke: '#f56682', strokeDasharray: '0 0 2.83 2.83', strokeLinecap: 'round', strokeMiterlimit: 10,}}></line>
                 <line x1="333.11" y1="335.04" x2="333.11" y2="336.54" style={{fill: "none", stroke: '#f56682', strokeLinecap: "round", strokeMiterlimit: 10,}}></line>
             </g>
@@ -3389,15 +3413,15 @@ const Animation = () => {
             <circle cx="456.71" cy="190.76" r="12.84" style={{fill: '#f56682', stroke: '#fff', strokeMiterlimit: 10, strokeWidth: '.5px'}}></circle>
             <g>
                 <g>
-                    <line class="threat-arrow" x1="422" y1="218" x2="490" y2="201" style={{fill: 'none', stroke: '#f56682', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '16px'}}></line>
+                    <line class="threat-arrow" x1="422" y1="218" x2="490" y2="201" style={{fill: 'none', stroke: '#f56682', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '16px', animation: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? 'upwardAnimation 1s linear infinite' : 'none'}}></line>
                 </g>
-                <polyline points="424.93 220.45 420.81 218.09 422.89 213.5" style={{fill: "none", stroke: '#f56682', strokeLinecap: "round", strokeMiterlimit: 10,}}></polyline>
+                <polyline points="424.93 220.45 420.81 218.09 422.89 213.5" style={{fill: "none", stroke: '#f56682', strokeLinecap: "round", strokeMiterlimit: 10, animation: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? 'upwardAnimation 1s linear infinite' : 'none'}}></polyline>
             </g>
             <g>
                 <g>
-                    <line class="threat-arrow" x1="384" y1="210" x2="450.15" y2="194.5" style={{fill: 'none', stroke: '#f56682', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '16px'}}></line>
+                    <line class="threat-arrow" x1="384" y1="210" x2="450.15" y2="194.5" style={{fill: 'none', stroke: '#f56682', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '16px',animation: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? 'upwardAnimation 1s linear infinite' : 'none' }}></line>
                 </g>
-                <polyline points="384.55 213.76 380.44 211.39 382.52 206.8" style={{fill: "none", stroke: '#f56682', strokeLinecap: "round", strokeMiterlimit: 10,}}></polyline>
+                <polyline points="384.55 213.76 380.44 211.39 382.52 206.8" style={{fill: "none", stroke: '#f56682', strokeLinecap: "round", strokeMiterlimit: 10, animation: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? 'upwardAnimation 1s linear infinite' : 'none'}}></polyline>
             </g>
             <g>
                 <path d="m462.85,193.66c0,.05.02.1.02.15,0,1.72-2.79,3.17-6.09,3.17s-6.09-1.45-6.09-3.17c0-.05.01-.1.02-.15-.23-.19-.43-.39-.61-.6-.08.24-.12.49-.12.75,0,2.18,2.99,3.9,6.81,3.9s6.81-1.71,6.81-3.9c0-.26-.04-.51-.12-.75-.18.21-.38.41-.61.6Z" style={{fill: '#fff', strokeWidth: 0,}}></path>
@@ -3409,13 +3433,13 @@ const Animation = () => {
                 <circle cx="91.47" cy="190.76" r="12.84" style={{fill: '#f56682', stroke: '#fff', strokeMiterlimit: 10, strokeWidth: '.5px'}}></circle>
                 <g>
                     <g>
-                        <line class="threat-arrow" x1="124" y1="217" x2="57.65" y2="201.2" style={{fill: 'none', stroke: '#f56682', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '16px'}}></line>
+                        <line class="threat-arrow" x1="124" y1="217" x2="57.65" y2="201.2" style={{fill: 'none', stroke: '#f56682', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '16px', animation: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? 'upwardAnimation 1s linear infinite' : 'none'}}></line>
                     </g>
                     <polyline points="123.25 220.45 127.36 218.09 125.29 213.5" style={{fill: "none", stroke: '#f56682', strokeLinecap: "round", strokeMiterlimit: 10,}}></polyline>
                 </g>
                 <g>
                     <g>
-                        <line class="threat-arrow" x1="165" y1="210.5" x2="98.02" y2="194.5" style={{fill: 'none', stroke: '#f56682', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '16px'}}></line>
+                        <line class="threat-arrow" x1="165" y1="210.5" x2="98.02" y2="194.5" style={{fill: 'none', stroke: '#f56682', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '16px', animation: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? 'upwardAnimation 1s linear infinite' : 'none'}}></line>
                     </g>
                     <polyline points="163.62 213.76 167.73 211.39 165.66 206.8" style={{fill: "none", stroke: '#f56682', strokeLinecap: "round", strokeMiterlimit: 10,}}></polyline>
                 </g>
@@ -3721,14 +3745,14 @@ const Animation = () => {
     transition: 'opacity 2s ease-in-out' ,
     visibility: currentIndex === 8 ? 'visible' : 'hidden',
   }}>
-            <line x1="69.78" y1="114" x2="69.78" y2="454" style={{fill: 'none', stroke: '#f56682', strokeDasharray: '0 0 3 3', strokeLinecap: 'round'}}></line>
-            <line x1="130.9" y1="130" x2="130.9" y2="470" style={{fill: 'none', stroke: '#f56682', strokeDasharray: '0 0 3 3', strokeLinecap: 'round'}}></line>
-            <line x1="192.01" y1="144" x2="192.01" y2="484" style={{fill: 'none', stroke: '#f56682', strokeDasharray: '0 0 3 3', strokeLinecap: 'round'}}></line>
-            <line x1="253.13" y1="158" x2="253.13" y2="498" style={{fill: 'none', stroke: '#f56682', strokeDasharray: '0 0 3 3', strokeLinecap: 'round'}}></line>
-            <line x1="314.25" y1="158" x2="314.25" y2="498" style={{fill: 'none', stroke: '#f56682', strokeDasharray: '0 0 3 3', strokeLinecap: 'round'}}></line>
-            <line x1="375.36" y1="144" x2="375.36" y2="483" style={{fill: 'none', stroke: '#f56682', strokeDasharray: '0 0 3 3', strokeLinecap: 'round'}}></line>
-            <line x1="436.48" y1="126" x2="436.48" y2="470" style={{fill: 'none', stroke: '#f56682', strokeDasharray: '0 0 3 3', strokeLinecap: 'round'}}></line>
-            <line x1="497.6" y1="110" x2="497.6" y2="453" style={{fill: 'none', stroke: '#f56682', strokeDasharray: '0 0 3 3', strokeLinecap: 'round'}}></line>
+            <line x1="69.78" y1="114" x2="69.78" y2="454" style={{fill: 'none', stroke: '#f56682', strokeDasharray: '0 0 3 3', strokeLinecap: 'round', animation: currentIndex === 8 ? 'downwardAnimation 1s linear infinite' : 'none'}}></line>
+            <line x1="130.9" y1="130" x2="130.9" y2="470" style={{fill: 'none', stroke: '#f56682', strokeDasharray: '0 0 3 3', strokeLinecap: 'round', animation: currentIndex === 8 ? 'downwardAnimation 1s linear infinite' : 'none'}}></line>
+            <line x1="192.01" y1="144" x2="192.01" y2="484" style={{fill: 'none', stroke: '#f56682', strokeDasharray: '0 0 3 3', strokeLinecap: 'round', animation: currentIndex === 8 ? 'downwardAnimation 1s linear infinite' : 'none'}}></line>
+            <line x1="253.13" y1="158" x2="253.13" y2="498" style={{fill: 'none', stroke: '#f56682', strokeDasharray: '0 0 3 3', strokeLinecap: 'round', animation: currentIndex === 8 ? 'downwardAnimation 1s linear infinite' : 'none'}}></line>
+            <line x1="314.25" y1="158" x2="314.25" y2="498" style={{fill: 'none', stroke: '#f56682', strokeDasharray: '0 0 3 3', strokeLinecap: 'round', animation: currentIndex === 8 ? 'downwardAnimation 1s linear infinite' : 'none'}}></line>
+            <line x1="375.36" y1="144" x2="375.36" y2="483" style={{fill: 'none', stroke: '#f56682', strokeDasharray: '0 0 3 3', strokeLinecap: 'round', animation: currentIndex === 8 ? 'downwardAnimation 1s linear infinite' : 'none'}}></line>
+            <line x1="436.48" y1="126" x2="436.48" y2="470" style={{fill: 'none', stroke: '#f56682', strokeDasharray: '0 0 3 3', strokeLinecap: 'round', animation: currentIndex === 8 ? 'downwardAnimation 1s linear infinite' : 'none'}}></line>
+            <line x1="497.6" y1="110" x2="497.6" y2="453" style={{fill: 'none', stroke: '#f56682', strokeDasharray: '0 0 3 3', strokeLinecap: 'round', animation: currentIndex === 8 ? 'downwardAnimation 1s linear infinite' : 'none'}}></line>
 
             <polyline points="500.98 451.96 497.63 455.32 494.27 451.96" style={{fill: 'none', stroke: '#f56682', strokeLinecap: 'round', strokeMiterlimit: 10}}></polyline>
             <polyline points="439.68 469.74 436.33 473.09 432.97 469.74" style={{fill: 'none', stroke: '#f56682', strokeLinecap: 'round', strokeMiterlimit: 10}}></polyline>
