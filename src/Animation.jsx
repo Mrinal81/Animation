@@ -17,11 +17,11 @@ const contentData = [
             <div className='px-8'>
                 <div className='bg-[#f5f5f5] p-4 rounded-lg'>
                     <h2 className='font-semibold text-xl w-96'>What is the <span className='text-[#9747FF]'>DeepDefend exposure management platform</span></h2>
-                    <p className='pt-6'>The Skybox platform supports each stage of your enterprise continuous exposure management program to map the attack surface and contextualize with data, assess and prioritize vulnerabilities, and combat the threat through final remediation. Integrated attack surface management, vulnerability management, and security policy management solutions make it easy to manage exposures and maximize the effectiveness of your security team.</p>
+                    <p className='pt-6'>The DeepDefend platform facilitates every phase of your enterprise's ongoing exposure management program, enabling the mapping of your attack surface and contextualization with data, evaluation and prioritization of vulnerabilities, and mitigation of threats through final remediation actions. Unified solutions for managing attack surfaces, vulnerabilities, and security policies streamline exposure management and enhance your security team's efficiency.</p>
                 </div>
                 <div className='mt-12'>
                 <h2 className='font-semibold text-xl'>The DeepDefend Platform drives exposure management programs</h2>
-                    <p className='pt-6'>With Skybox, you create consistent, enterprise-wide exposure management programs that continuously map your attack surface, contextualize the results, assess and prioritize the threats, and automate remediations to combat them. The power of our platform is built on the aggregated security, policy, and infrastructure data collected and aggregated from your infrastructure and cloud environments. With Skybox you will achieve greater insight, make smarter decisions, build business resiliency, and maximize your valuable technical resources on what matters most to your organization.</p>
+                    <p className='pt-6'>Utilizing DeepDefend enables the establishment of uniform exposure management initiatives spanning across your enterprise, persistently mapping your attack surface, contextualizing findings, prioritizing threats, and automating remedial actions. The potency of our platform stems from the amalgamation of security, policy, and infrastructure data amassed from both your on-premises and cloud environments. With DeepDefend, you can attain deeper insights, make more informed decisions, bolster business resilience, and optimize your valuable technical assets according to your organization's priorities.</p>
                 </div>
             </div>
         </div>
@@ -43,9 +43,9 @@ const contentData = [
                 </div>
                 <div className='mt-12'>
                     <h2 className='font-semibold text-xl'>Attack surface visibility and management</h2>
-                    <p className='pt-6'>The Skybox platform meticulously curates a robust network model and inventories your assets, networks, clouds, and users to manage cyber risk across your organization hybrid attack surface.</p>
-                    <p className='pt-6'>Through advanced techniques like attack path analysis and simulation, we detect, prioritize, and combat internet-accessible threats. We illuminate potential exploit routes, scrutinizing firewall and network configurations to identify vulnerabilities.</p>
-                    <p className='pt-6'>The result is strategic visualization and detailed reports of your hybrid attack surface, empowering your organization to proactively monitor, track changes, and swiftly respond to emerging threats.</p>
+                    <p className='pt-6'>The DeepDefend platform carefully constructs a strong network model and catalogues assets, networks, clouds, and users to manage cyber risks across your organization's hybrid attack surface.</p>
+                    <p className='pt-6'>Utilizing advanced methods such as attack path analysis and simulation, we identify, prioritize, and counter internet-accessible threats. We highlight potential exploit paths by examining firewall and network configurations to pinpoint vulnerabilities.</p>
+                    <p className='pt-6'>This leads to strategic visualization and comprehensive reports of your hybrid attack surface, enabling your organization to proactively oversee, monitor changes, and promptly address emerging threats.</p>
                 </div>
             </div>
         </div>
@@ -55,7 +55,7 @@ const contentData = [
     {
 
         image: secondImage,
-        verticalDivHeight: '56vh',
+        verticalDivHeight: '60vh',
         content: (
             <>
              <div className="thirdPart mt-24 section" id='thirdPart'>
@@ -63,8 +63,8 @@ const contentData = [
             <div className='px-8'>
             <div>
                     <h2 className='font-semibold text-xl'>Vulnerability management</h2>
-                    <p className='pt-6'>Skybox leverages an array of 3rd party threat intelligence sources, and our own Skybox Threat Intelligence, to enrich your attack surface map and provide a holistic view of your vulnerability and threat exposure. Our multi-factor risk assessment and prioritization considers severity, importance, exploitability, and network exposure, enabling you to focus resources on vulnerabilities that represent the most risk to your business.</p>
-                    <p className='pt-6'>Beyond prioritization, Skybox offers proactive, automated remediation suggestions and controls for each vulnerability. We facilitate streamlined responses through ITSM system integration, network segmentation recommendations, and automated firewall adjustments. Even without immediate patching, Skybox Vulnerability Control provides effective risk mitigation alternatives.</p>    
+                    <p className='pt-6'>DeepDefend utilizes a variety of external threat intelligence sources, alongside our proprietary DeepDefend Threat Intelligence, to enhance your attack surface map and present a comprehensive overview of your vulnerability and threat exposure. Our multifaceted risk assessment and prioritization take into account severity, significance, exploitability, and network exposure, allowing you to allocate resources to vulnerabilities posing the greatest risk to your organization.</p>
+                    <p className='pt-6'>In addition to prioritization, DeepDefend offers proactive, automated suggestions for remediation and controls for each vulnerability. We facilitate efficient responses through integration with IT Service Management systems, recommendations for network segmentation, and automated adjustments to firewalls. Even in the absence of immediate patching, DeepDefend Vulnerability Control offers effective alternatives for risk mitigation.</p>    
                 </div>
             </div>
         </div>
@@ -74,7 +74,7 @@ const contentData = [
     {
 
         image: firstImage,
-        verticalDivHeight: '56vh',
+        verticalDivHeight: '54vh',
         content: (
             <>
              <div className="fourthPart mt-24 section" id='fourthPart'>
@@ -82,8 +82,8 @@ const contentData = [
             <div className='px-8'>
             <div>
                     <h2 className='font-semibold text-xl'>Security policy management</h2>
-                    <p className='pt-6'>Gain deep insights into your network, analyzing configurations, paths, connectivity, and access. Skybox Network Assurance ensures meticulous adherence to proper network zoning, bridging any gaps that may exist between your official network segmentation policy and the actual implementation within your hybrid network environment.</p>
-                    <p className='pt-6'>Skybox Firewall Assurance optimizes performance by identifying and eliminating shadow or redundant firewall rules and managing numerous firewalls through a centralized interface. Skybox Change Manager automates firewall changes, with risk assessments conducted before provisioning new rules. Easily recertify firewall rules and generate reports vital for compliance audits. Harness the power of efficient network management, bolstering your cybersecurity while maintaining compliance.</p>
+                    <p className='pt-6'>Obtain thorough insights into your network by examining configurations, pathways, connectivity, and access. DeepDefend Network Assurance ensures meticulous adherence to your network zoning, bridging any gaps between your official segmentation policy and its actual implementation in your hybrid network setup.</p>
+                    <p className='pt-6'>DeepDefend Firewall Assurance enhances performance by identifying and removing redundant or unnecessary firewall rules and managing multiple firewalls through a centralized interface. DeepDefend Change Manager automates firewall adjustments, conducting risk assessments prior to implementing new rules. Easily revalidate firewall rules and produce crucial reports essential for compliance audits. Harness the efficiency of network management to strengthen your cybersecurity posture while upholding compliance standards.</p>
                 </div>
             </div>
         </div>
@@ -93,7 +93,7 @@ const contentData = [
     {
 
         image: secondImage,
-        verticalDivHeight: '66vh',
+        verticalDivHeight: '68vh',
         content: (
             <>
               <div className="fifthPart mt-24 section" id='fifthPart'>
@@ -101,12 +101,12 @@ const contentData = [
             <div className='px-8'>
                 <div className='flex gap-4 items-center'>
                     <div className='w-6 h-6 bg-[#7a2982] rounded-full'></div>
-                <h1 className='text-2xl font-bold'>Skybox Dynamic Security Model</h1>
+                <h1 className='text-2xl font-bold'>DeepDefend Dynamic Security Model</h1>
                 </div>
                 <div className='mt-12'>
                     <h2 className='font-semibold text-xl'>Exposure Management starts with a robust model</h2>
-                    <p className='pt-6'>Skybox’s dynamic security model provides a 360-degree hybrid attack surface map, built on a comprehensive understanding of firewall and network security policy, and overlayed with threat intelligence and risk data for enhanced cybersecurity and automated remediation. The model integrates asset information, vulnerability and threat data, network and security controls, and insights into applications and users for a panoramic view of your entire attack surface.</p>
-                    <p className='pt-6'>Use the model to analyze potential attack paths, fine-tune security policies, and prioritize your defenses. Insights on vulnerability severity, asset importance, and exploitability gleaned from Skybox Threat Intelligence enable prioritized risk management. Continuously updated, the model delivers actionable remediations and automated controls to fortify your security.</p>
+                    <p className='pt-6'>DeepDefend's dynamic security framework offers a comprehensive 360-degree hybrid attack surface map, drawing from an in-depth understanding of firewall and network security policies. It is augmented with threat intelligence and risk data to bolster cybersecurity measures and automate remedial actions. This model integrates asset details, vulnerability and threat insights, network and security protocols, and insights into applications and users, providing a panoramic perspective of your entire attack surface.</p>
+                    <p className='pt-6'>Utilize this model to examine potential attack routes, refine security protocols, and prioritize defensive strategies. Insights derived from DeepDefend Threat Intelligence regarding vulnerability severity, asset significance, and exploitability facilitate targeted risk management efforts. Continuously updated, the model offers actionable remedial actions and automated controls to reinforce your security posture.</p>
                     
                 </div>
             </div>
@@ -118,7 +118,7 @@ const contentData = [
     {
 
         image: firstImage,
-        verticalDivHeight: '86vh',
+        verticalDivHeight: '88vh',
         content: (
             <>
                <div className="sixthPart mt-24 section" id='sixthPart'>
@@ -130,8 +130,8 @@ const contentData = [
                 </div>
                 <div className='mt-12'>
                     <h2 className='font-semibold text-xl'>Exposure Management starts with a robust model</h2>
-                    <p className='pt-6'>Skybox aggregates 35+ intelligence feeds into our Threat Intelligence Service, including vulnerability scanners, vendor advisories, IPS signature updates, public databases such as NIST NVD, exploitability notifications and expert advisories, including MITRE CVE, CISA, CERT and ICS CERT.</p>
-                    <p className='pt-6'>Assess and prioritize exposures based on not only CVE severity, but also the importance of the asset to the business, evidence of exploitability in the wild, and exposure of the asset to potential compromise across the hybrid network.</p>
+                    <p className='pt-6'>DeepDefend consolidates over 35 intelligence feeds into our Threat Intelligence Service, encompassing vulnerability scanners, vendor advisories, IPS signature updates, public databases like NIST NVD, exploitability notifications, and expert advisories such as MITRE CVE, CISA, CERT, and ICS CERT.</p>
+                    <p className='pt-6'>Evaluate and prioritize vulnerabilities not only based on CVE severity but also considering the asset's significance to the business, evidence of exploitability in real-world scenarios, and the potential compromise of the asset across the hybrid network.</p>
                 </div>
             </div>
             <div className='px-8 mt-16'>
@@ -140,7 +140,7 @@ const contentData = [
                 <h1 className='text-2xl font-semibold'>Attack surface map</h1>
                 </div>
                 <div className='mt-2'>
-                    <p className='pt-4'>You cannot protect what you cannot see. For a complete picture of your organization exposure, you need a detailed attack surface map showing all the assets, networks, clouds, applications, users — and the routes and attack paths between them.</p>
+                    <p className='pt-4'>To safeguard effectively, visibility is paramount. To fully understand your organization's exposure, a comprehensive attack surface map is essential. This map must encompass all assets, networks, clouds, applications, and users, along with the routes and attack paths connecting them.</p>
                 </div>
             </div>
         </div>
@@ -150,7 +150,7 @@ const contentData = [
     {
 
         image: secondImage,
-        verticalDivHeight: '48vh',
+        verticalDivHeight: '50vh',
         content: (
             <>
               <div className="seventhPart mt-24 section" id='seventhPart'>
@@ -162,9 +162,9 @@ const contentData = [
                 </div>
                 <div className='mt-4'>
                     
-                    <p className='pt-6'>Some of the most critical exposures and risks that an organization faces are not caused by vulnerabilities. They are a function of</p>
-                    <p className='pt-6'>A detailed insight into the underlying infrastructure, network, and security policy, enables you to understand how the network is segmented and zoned and analyze firewall configuration and rule bases for potential security gaps.</p>
-                    <p className='pt-6'>Simplify policy management, control large numbers of firewalls from multiple vendors from a single interfaces, assess firewall change requests, and automate changes that reduce exposure.</p>
+                    <p className='pt-6'>Not all of the organization's most significant exposures and risks stem from vulnerabilities.</p>
+                    <p className='pt-6'>Gaining a thorough understanding of the underlying infrastructure, network setup, and security policies allows for analysis of network segmentation and zoning. It also facilitates examination of firewall configurations and rule sets to identify potential security weaknesses.</p>
+                    <p className='pt-6'>Streamline policy management, oversee numerous firewalls from various vendors through a unified interface, evaluate firewall change requests, and implement automated changes aimed at minimizing exposure.</p>
                 </div>
             </div>
         </div>
@@ -186,7 +186,7 @@ const contentData = [
                 </div>
                 <div className='mt-12'>
                     <h2 className='font-semibold text-xl'>Broad ecosystem integration and data aggregation</h2>
-                    <p className='pt-6'>Skybox’s hybrid attack surface model aggregates data from over 150 integrations, including leading network platforms, asset databases, and security technologies. The model holds information on the devices, applications, and users in the organization, as well as:</p>
+                    <p className='pt-6'>DeepDefend’s hybrid attack surface model aggregates data from over 150 integrations, including leading network platforms, asset databases, and security technologies. The model holds information on the devices, applications, and users in the organization, as well as:</p>
                     <div className='pt-6'>
                     <div className='flex items-center gap-4'>
                         <div className='w-3 h-3 bg-[#f37e47] rounded-full'></div>
@@ -231,7 +231,7 @@ const contentData = [
                 </div>
                 <div className='mt-4'>
                     <p className='pt-6'>Quickly mitigate risks and trigger remediation processes, leverage seamless automation with your ITSM system to speed up ticketing, inform patch cycles, and maintain accountability with comprehensive audit trails.</p>
-                    <p className='pt-6'>When the cadence between patching cycles exposes a vulnerable asset to compromise for too long, Skybox automatically suggests alternative compensating controls, such as changes to network segmentation, the application of IPS signature updates, or modifications to firewall rule tables.</p>
+                    <p className='pt-6'>When the cadence between patching cycles exposes a vulnerable asset to compromise for too long, DeepDefend automatically suggests alternative compensating controls, such as changes to network segmentation, the application of IPS signature updates, or modifications to firewall rule tables.</p>
                     <p className='pt-6'>Use change automation workflows to automatically maintain security policy compliance. Manage firewall rule recertification, change verification, and de-provisioning.</p>
                 </div>
             </div>
@@ -301,7 +301,7 @@ const Animation = () => {
     
   return (
     <div className='container flex justify-center items-center w-full h-[99.9vh]'>
-    <div className='flex h-[88vh] px-8'>
+    <div className='flex w-full h-[88vh] px-8'>
       <div className="left w-[60%] flex justify-center items-center overflow-x-hidden">
      
       <svg id="ctem-svg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="800" height="650" viewBox="0 0 710 550">
@@ -2960,7 +2960,7 @@ const Animation = () => {
             </g>
             <g class="real-env-icon-group">
                 <g class="real-env-icon-position" style={{transform:'translate(323px, 519px)'}}>
-                    <g class="real-env-icon" data-svg-origin="2.3199996948242188 2.4700002670288086" transform="matrix(1,0,0,1,0,0)" style={{translate: 'none', rotate: 'none', scale: 'none', transformOrigin: '0px 0px', animationDuration: '3s', animationIterationCount: 'infinite',}} ref={iconRef} className={`real-env-icon ${currentIndex === 0 || currentIndex === 7 || currentIndex === 8 ? 'bounce' : ''}`}>
+                    <g class="real-env-icon" data-svg-origin="2.3199996948242188 2.4700002670288086" transform="matrix(1,0,0,1,0,0)" style={{translate: 'none', rotate: 'none', scale: 'none', transformOrigin: '0px 0px',animationDuration: '3s', animationIterationCount: 'infinite',}} ref={iconRef} className={`real-env-icon ${currentIndex === 0 || currentIndex === 7 || currentIndex === 8 ? 'bounce' : ''}`}>
                         <circle style={{ opacity:0.85,fill: currentIndex === 0 || currentIndex === 7 || currentIndex === 8 ? '#454d51' : '#9b9b9b',stroke:'#FFFFFF',strokeWidth:0.5,strokeMiterlimit:10}} cx="13.04" cy="13.19" r="10.72"></circle>
                         <g>
                             <g>
@@ -3068,7 +3068,7 @@ const Animation = () => {
                 <path class="real-env-icon-shadow" d="m285.51,561.23c0,1.15-5.38,2.08-12.01,2.08-6.63,0-12.01-.93-12.01-2.08s5.38-2.08,12.01-2.08,12.01.93,12.01,2.08Z" style={{fill: currentIndex === 8 ? 'rgb(243, 126, 71)' : 'rgb(110, 124, 124)', opacity: 0.75, strokeWidth: 0, transformOrigin: '0px 0px', translate: 'none', rotate: 'none', scale: 'none',}} data-svg-origin="273.5 561.22998046875" transform="matrix(1,0,0,1,0,0)"></path>
             </g>
             <g class="real-env-icon-group">
-                <g class="real-env-icon" data-svg-origin="78.20999908447266 495.67999267578125" transform="matrix(1,0,0,1,0,0)" style={{translate: 'none', rotate: 'none', scale: 'none', transformOrigin: '0px 0px', animationDuration: '3s', animationIterationCount: 'infinite',}} ref={iconRef} className={`real-env-icon ${currentIndex === 0 || currentIndex === 7 || currentIndex === 8 ? 'bounce' : ''}`}>
+                <g class="real-env-icon" data-svg-origin="78.20999908447266 495.67999267578125" transform="matrix(1,0,0,1,0,0)" style={{translate: 'none', rotate: 'none', scale: 'none', transformOrigin: '0px 0px',animationDuration: '3s', animationIterationCount: 'infinite',}} ref={iconRef} className={`real-env-icon ${currentIndex === 0 || currentIndex === 7 || currentIndex === 8 ? 'bounce' : ''}`}>
                     <circle cx="88.94" cy="506.41" r="10.73" style={{fill: currentIndex === 0 || currentIndex === 7 || currentIndex === 8 ? '#454d51' : '#9b9b9b', opacity: .85, stroke: '#fff', strokeMiterlimit: 10, strokeWidth: '.5px'}}></circle>
                     <g>
                         <path d="m91.2,508.35h-4.52v-3.72h.56v-.07c0-.18,0-.35,0-.52.02-.59.33-1.13.85-1.43.52-.3,1.14-.31,1.65-.02.57.31.88.83.89,1.49,0,.16,0,.33,0,.49v.05h.56v3.73h0Zm-4.16-.36h3.79v-3h-.56v-.9c0-.53-.25-.93-.71-1.18-.41-.22-.89-.22-1.3.02-.41.23-.66.65-.67,1.12,0,.17,0,.34,0,.51v.44h-.56v2.99h0Zm2.45-.46h-1.11l.04-.29c.02-.13.03-.25.05-.37v-.05c.02-.06.02-.13.04-.19.02-.09,0-.11-.04-.16-.1-.1-.15-.23-.15-.37,0-.17.08-.34.21-.46.22-.21.59-.21.82,0,.12.11.2.27.2.43,0,.15-.05.29-.15.39-.04.04-.04.06-.03.18l.12.89Zm-.7-.37h.28l-.06-.47c-.02-.13-.04-.31.13-.48.04-.04.05-.09.05-.13,0-.06-.03-.13-.08-.18-.09-.08-.24-.09-.33,0-.06.05-.09.12-.09.19,0,.04.01.08.04.11.17.17.16.35.14.48-.01.05-.02.11-.03.17v.05c-.02.09-.03.17-.04.25Zm1.21-2.18h-2.15v-.19c.02-.11.02-.22.01-.34,0-.23-.01-.47.06-.71.1-.32.36-.57.7-.67.34-.1.71-.04.97.18.26.22.4.5.41.84,0,.17,0,.33,0,.5v.4h0Zm-1.77-.37h1.41v-.04c0-.16,0-.33,0-.48,0-.24-.09-.42-.27-.56-.17-.14-.41-.18-.63-.11-.22.07-.39.23-.45.43-.06.19-.05.38-.04.59v.18Z" style={{fill: '#fff', strokeWidth: 0}}></path>
@@ -3733,7 +3733,7 @@ const Animation = () => {
 
 
 
-<g class="security-line" filter="url(#filter-security-line)" style={{
+        <g class="security-line" filter="url(#filter-security-line)" style={{
     opacity: currentIndex === 8 ? 0.25 : 1,
     transition: 'opacity 0.5s ease-in-out'}}>
             <path class="dsm-line" d="m517.13,213.89l20.62,2.99c2.95.43,5.14,2.96,5.14,5.94v149.74c0,2.75-1.87,5.15-4.54,5.82l-21.22,5.33" style={{fill: 'none', stroke: '#7a2982', strokeLinecap: 'round', strokeMiterlimit: 10, strokeWidth: '1.5px'}}></path>
@@ -3742,9 +3742,6 @@ const Animation = () => {
             <line class="dsm-line" x1="537.59" y1="299.94" x2="542.62" y2="299.94" style={{fill: 'none', stroke: '#7a2982', strokeLinecap: 'round', strokeMiterlimit: 10, strokeWidth: '1.5px'}}></line>
             <line class="dsm-line" x1="537.59" y1="232.96" x2="542.62" y2="232.96" style={{fill: 'none', stroke: '#7a2982', strokeLinecap: 'round', strokeMiterlimit: 10, strokeWidth: '1.5px'}}></line>
         </g>
-
-        
-
 
         </g>
 
@@ -3803,12 +3800,9 @@ const Animation = () => {
             <circle cx="375.27" cy="276.58" r="4.19" style={{fill: '#3fbdac', stroke: '#fff', strokeMiterlimit: 10}}></circle>
             <circle cx="192.02" cy="324.3" r="4.19" style={{fill: '#3fbdac', stroke: '#fff', strokeMiterlimit: 10}}></circle>
         </g>
-    </g>
+        </g>
 
-     
 
-     
-      
      
     </svg>
       </div>

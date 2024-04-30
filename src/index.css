@@ -281,7 +281,7 @@ body{
 
 .real-env-icon.bounce {
   animation-name: bounce;
-  animation-timing-function: ease;
+  animation-timing-function: 1.5s ease-in-out;
 }
 
 @keyframes bounce {
@@ -299,7 +299,7 @@ body{
 
 .real-env-icon-shadow.shadow-scale {
   animation-name: shadow-scale;
-  animation-timing-function: ease;
+  animation-timing-function: 1.5s ease-in-out;
 }
 
 @keyframes shadow-scale {
