@@ -245,6 +245,19 @@ const Animation = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const sectionRefs = useRef([]);
     const verticalDivRefs = useRef([]);
+    const iconRef = useRef(null);
+
+
+     useEffect(() => {
+    const icon = iconRef.current;
+
+    if (currentIndex === 0 || currentIndex === 7) {
+      icon.classList.add('bounce');
+    } else {
+      icon.classList.remove('bounce');
+    }
+  }, [currentIndex]);
+
 
       useEffect(() => {
         const setInitialStyles = () => {
@@ -288,7 +301,7 @@ const Animation = () => {
     
   return (
     <div className='container flex justify-center items-center w-full h-[99.9vh]'>
-    <div className='flex w-full h-[88vh] px-8'>
+    <div className='flex h-[88vh] px-8'>
       <div className="left w-[60%] flex justify-center items-center overflow-x-hidden">
      
       <svg id="ctem-svg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="800" height="650" viewBox="0 0 710 550">
@@ -2855,38 +2868,38 @@ const Animation = () => {
     transition: 'opacity 0.5s ease-in-out' // Add a transition for smooth animation
   }} >
 
-            <line x1="60.52" y1="444.41" x2="60.52" y2="508" style={{fill: 'none', stroke: 'rgb(243, 126, 71)', strokeDasharray: '0, 0, 3.11, 3.11', strokeLinecap: 'round', strokeMiterlimit: 10, strokeDashoffset: "17px",
+            <line x1="60.52" y1="444.41" x2="60.52" y2="508" style={{fill: 'none', stroke: currentIndex === 0 || currentIndex === 7 ? 'rgb(243, 126, 71)' : '#9b9b9b', strokeDasharray: '0, 0, 3.11, 3.11', strokeLinecap: 'round', strokeMiterlimit: 10, strokeDashoffset: "17px",
                animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></line>
-            <line x1="121.64" y1="459.66" x2="121.64" y2="524" style={{fill: 'none', stroke: 'rgb(243, 126, 71)', strokeDasharray: '0, 0, 3.11, 3.11', strokeLinecap: 'round', strokeMiterlimit: 10, strokeDashoffset: "17px",
+            <line x1="121.64" y1="459.66" x2="121.64" y2="524" style={{fill: 'none', stroke: currentIndex === 0 || currentIndex === 7 ? 'rgb(243, 126, 71)' : '#9b9b9b', strokeDasharray: '0, 0, 3.11, 3.11', strokeLinecap: 'round', strokeMiterlimit: 10, strokeDashoffset: "17px",
                animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></line>
-            <line x1="183.3" y1="475.11" x2="183.3" y2="539" style={{fill: 'none', stroke: 'rgb(243, 126, 71)', strokeDasharray: '0, 0, 3.11, 3.11', strokeLinecap: 'round', strokeMiterlimit: 10, strokeDashoffset: "17px",
+            <line x1="183.3" y1="475.11" x2="183.3" y2="539" style={{fill: 'none', stroke: currentIndex === 0 || currentIndex === 7 ? 'rgb(243, 126, 71)' : '#9b9b9b', strokeDasharray: '0, 0, 3.11, 3.11', strokeLinecap: 'round', strokeMiterlimit: 10, strokeDashoffset: "17px",
                animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></line>
-            <line x1="244" y1="489.62" x2="244" y2="554" style={{fill: 'none', stroke: 'rgb(243, 126, 71)', strokeDasharray: '0, 0, 3.11, 3.11', strokeLinecap: 'round', strokeMiterlimit: 10, strokeDashoffset: "17px",
+            <line x1="244" y1="489.62" x2="244" y2="554" style={{fill: 'none', stroke: currentIndex === 0 || currentIndex === 7 ? 'rgb(243, 126, 71)' : '#9b9b9b', strokeDasharray: '0, 0, 3.11, 3.11', strokeLinecap: 'round', strokeMiterlimit: 10, strokeDashoffset: "17px",
                animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></line>
-            <line x1="304.99" y1="489.62" x2="304.99" y2="554" style={{fill: 'none', stroke: 'rgb(243, 126, 71)', strokeDasharray: '0, 0, 3.11, 3.11', strokeLinecap: 'round', strokeMiterlimit: 10, strokeDashoffset: "17px",
+            <line x1="304.99" y1="489.62" x2="304.99" y2="554" style={{fill: 'none', stroke: currentIndex === 0 || currentIndex === 7 ? 'rgb(243, 126, 71)' : '#9b9b9b', strokeDasharray: '0, 0, 3.11, 3.11', strokeLinecap: 'round', strokeMiterlimit: 10, strokeDashoffset: "17px",
                animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></line>
-            <line x1="366.1" y1="475.11" x2="366.1" y2="539" style={{fill: 'none', stroke: 'rgb(243, 126, 71)', strokeDasharray: '0, 0, 3.11, 3.11', strokeLinecap: 'round', strokeMiterlimit: 10, strokeDashoffset: "17px",
+            <line x1="366.1" y1="475.11" x2="366.1" y2="539" style={{fill: 'none', stroke: currentIndex === 0 || currentIndex === 7 ? 'rgb(243, 126, 71)' : '#9b9b9b', strokeDasharray: '0, 0, 3.11, 3.11', strokeLinecap: 'round', strokeMiterlimit: 10, strokeDashoffset: "17px",
                animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></line>
-            <line x1="427.22" y1="461.15" x2="427.22" y2="525" style={{fill: 'none', stroke: 'rgb(243, 126, 71)', strokeDasharray: '0, 0, 3.11, 3.11', strokeLinecap: 'round', strokeMiterlimit: 10, strokeDashoffset: "17px",
+            <line x1="427.22" y1="461.15" x2="427.22" y2="525" style={{fill: 'none', stroke: currentIndex === 0 || currentIndex === 7 ? 'rgb(243, 126, 71)' : '#9b9b9b', strokeDasharray: '0, 0, 3.11, 3.11', strokeLinecap: 'round', strokeMiterlimit: 10, strokeDashoffset: "17px",
                animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></line>
-            <line x1="488.34" y1="447.2" x2="488.34" y2="510" style={{fill: 'none', stroke: 'rgb(243, 126, 71)', strokeDasharray: '0, 0, 3.11, 3.11', strokeLinecap: 'round', strokeMiterlimit: 10, strokeDashoffset: "17px",
+            <line x1="488.34" y1="447.2" x2="488.34" y2="510" style={{fill: 'none', stroke: currentIndex === 0 || currentIndex === 7 ? 'rgb(243, 126, 71)' : '#9b9b9b', strokeDasharray: '0, 0, 3.11, 3.11', strokeLinecap: 'round', strokeMiterlimit: 10, strokeDashoffset: "17px",
                animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></line>
             
-            <polyline points="485.02 516.69 488.37 513.33 491.73 516.69" style={{fill: 'none',stroke: '#f37e47', strokeLinecap: 'round', strokeMiterlimit: 10,
+            <polyline points="485.02 516.69 488.37 513.33 491.73 516.69" style={{fill: 'none',stroke: currentIndex === 0 || currentIndex === 7 ? '#f37e47' : '#9b9b9b', strokeLinecap: 'round', strokeMiterlimit: 10,
                animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></polyline>
-            <polyline points="423.71 530.64 427.07 527.28 430.42 530.64" style={{fill: 'none',stroke: '#f37e47', strokeLinecap: 'round', strokeMiterlimit: 10,
+            <polyline points="423.71 530.64 427.07 527.28 430.42 530.64" style={{fill: 'none',stroke: currentIndex === 0 || currentIndex === 7 ? '#f37e47' : '#9b9b9b', strokeLinecap: 'round', strokeMiterlimit: 10,
                animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></polyline>
-            <polyline points="362.69 544.59 366.05 541.24 369.4 544.59" style={{fill: 'none',stroke: '#f37e47', strokeLinecap: 'round', strokeMiterlimit: 10,
+            <polyline points="362.69 544.59 366.05 541.24 369.4 544.59" style={{fill: 'none',stroke: currentIndex === 0 || currentIndex === 7 ? '#f37e47' : '#9b9b9b', strokeLinecap: 'round', strokeMiterlimit: 10,
                animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></polyline>
-            <polyline points="301.57 558.83 304.93 555.47 308.28 558.83" style={{fill: 'none',stroke: '#f37e47', strokeLinecap: 'round', strokeMiterlimit: 10,
+            <polyline points="301.57 558.83 304.93 555.47 308.28 558.83" style={{fill: 'none',stroke: currentIndex === 0 || currentIndex === 7 ? '#f37e47' : '#9b9b9b', strokeLinecap: 'round', strokeMiterlimit: 10,
                animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></polyline>
-            <polyline points="240.46 559.01 243.81 555.66 247.17 559.01" style={{fill: 'none',stroke: '#f37e47', strokeLinecap: 'round', strokeMiterlimit: 10,
+            <polyline points="240.46 559.01 243.81 555.66 247.17 559.01" style={{fill: 'none',stroke: currentIndex === 0 || currentIndex === 7 ? '#f37e47' : '#9b9b9b', strokeLinecap: 'round', strokeMiterlimit: 10,
                animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></polyline>
-            <polyline points="179.34 544.97 182.7 541.61 186.05 544.97" style={{fill: 'none',stroke: '#f37e47', strokeLinecap: 'round', strokeMiterlimit: 10,
+            <polyline points="179.34 544.97 182.7 541.61 186.05 544.97" style={{fill: 'none',stroke: currentIndex === 0 || currentIndex === 7 ? '#f37e47' : '#9b9b9b', strokeLinecap: 'round', strokeMiterlimit: 10,
                animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></polyline>
-            <polyline points="118.23 529.34 121.58 525.98 124.94 529.34" style={{fill: 'none',stroke: '#f37e47', strokeLinecap: 'round', strokeMiterlimit: 10,
+            <polyline points="118.23 529.34 121.58 525.98 124.94 529.34" style={{fill: 'none',stroke: currentIndex === 0 || currentIndex === 7 ? '#f37e47' : '#9b9b9b', strokeLinecap: 'round', strokeMiterlimit: 10,
                animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></polyline>
-            <polyline points="57.02 513.99 60.37 510.63 63.73 513.99" style={{fill: 'none',stroke: '#f37e47', strokeLinecap: 'round', strokeMiterlimit: 10,
+            <polyline points="57.02 513.99 60.37 510.63 63.73 513.99" style={{fill: 'none',stroke: currentIndex === 0 || currentIndex === 7 ? '#f37e47' : '#9b9b9b', strokeLinecap: 'round', strokeMiterlimit: 10,
                animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></polyline>
         </g>
 
@@ -2929,26 +2942,26 @@ const Animation = () => {
         <g class="real-env-icons" filter="url(#filter-real-env-icons)">
             <circle class="real-env-circle" cx="536.37" cy="517.32" r="4.19" style={{fill: '#454d51', stroke: '#fff', strokeMiterlimit: 10}}></circle>
             <g class="real-env-icon-group">
-                <g class="real-env-icon" data-svg-origin="383.45001220703125 510.8100280761719" transform="matrix(1,0,0,1,0,0)" style={{translate: 'none', rotate: 'none', scale: 'none', transformOrigin: '0px 0px'}}>
-                    <circle cx="394.28" cy="521.64" r="10.83" style={{fill: '#454d51', opacity: .85, stroke: '#fff', strokeMiterlimit: 10, strokeWidth: '.5px'}}></circle>
+                <g class="real-env-icon" data-svg-origin="383.45001220703125 510.8100280761719" transform="matrix(1,0,0,1,0,0)" style={{translate: 'none', rotate: 'none', scale: 'none', transformOrigin: '0px 0px', animationDuration: '3s', animationIterationCount: 'infinite',}} ref={iconRef} className={`real-env-icon ${currentIndex === 0 || currentIndex === 7 || currentIndex === 8 ? 'bounce' : ''}`}>
+                    <circle cx="394.28" cy="521.64" r="10.83" style={{fill:currentIndex === 0 || currentIndex === 7 || currentIndex === 8 ? '#454d51' : '#9b9b9b', opacity: .85, stroke: '#fff', strokeMiterlimit: 10, strokeWidth: '.5px'}}></circle>
                     <path d="m397.07,523.66h.3c1.25,0,2.26-1.01,2.26-2.26h0c0-1.08-.77-1.99-1.78-2.21-.03-1.61-1.35-2.9-2.97-2.9-1.02,0-1.94.52-2.47,1.32-.19-.08-.39-.13-.62-.13-.86,0-1.54.67-1.54,1.48,0,.13.02.25.05.37-.8.35-1.35,1.14-1.35,2.07h0c0,1.25,1.01,2.26,2.26,2.26h.3v1.67h-.27c-.11-.35-.42-.59-.8-.59-.46,0-.83.37-.83.83s.37.83.83.83c.38,0,.69-.25.8-.59h.51c.13,0,.24-.11.24-.24v-1.9h.95v1.7c-.34.11-.59.42-.59.8,0,.46.37.83.83.83s.83-.37.83-.83c0-.38-.25-.69-.59-.8v-1.7h1.78v1.7c-.35.11-.59.42-.59.8,0,.46.37.83.83.83s.83-.37.83-.83c0-.38-.25-.69-.59-.8v-1.7h.95v1.9c0,.13.11.24.24.24h.51c.11.35.42.59.8.59.46,0,.83-.37.83-.83s-.37-.83-.83-.83c-.38,0-.69.25-.8.59h-.27v-1.67h0Zm-6.65,2.26c-.2,0-.36-.16-.36-.36s.16-.36.36-.36.36.16.36.36c0,.2-.16.36-.36.36Zm3.09.24c0,.2-.16.36-.36.36s-.36-.16-.36-.36.16-.36.36-.36c.2,0,.36.16.36.36Zm2.26,0c0,.2-.16.36-.36.36s-.36-.16-.36-.36.16-.36.36-.36.36.16.36.36Zm-6.36-4.75c0-.7.42-1.34,1.07-1.63l.37-.16-.11-.39c-.02-.08-.03-.16-.03-.25,0-.56.48-1.01,1.07-1.01.16,0,.3.03.44.08l.36.16.21-.32c.49-.69,1.26-1.11,2.09-1.11,1.34,0,2.46,1.09,2.5,2.44v.38s.38.08.38.08c.81.16,1.4.9,1.4,1.74,0,.99-.8,1.78-1.78,1.78h-6.18c-.99,0-1.78-.8-1.78-1.79Zm8.74,3.8c.2,0,.36.16.36.36s-.16.36-.36.36-.36-.16-.36-.36c0-.21.16-.36.36-.36Z" style={{fill: '#fff', strokeWidth: 0}}></path>
                 </g>
-                <ellipse class="real-env-icon-shadow" cx="394.43" cy="537.79" rx="12.01" ry="2.08" style={{fill: 'rgb(110, 124, 124)', opacity: 0.75, strokeWidth: 0, transformOrigin: '0px 0px', translate: 'none', rotate: 'none', scale: 'none',}}data-svg-origin="394.4299831390381 537.789960861206" transform="matrix(1,0,0,1,0,0)"></ellipse>
+                <ellipse class="real-env-icon-shadow" cx="394.43" cy="537.79" rx="12.01" ry="2.08" style={{fill: currentIndex === 8 ? 'rgb(243, 126, 71)' : 'rgb(110, 124, 124)' , opacity: 0.75, strokeWidth: 0, transformOrigin: '0px 0px', translate: 'none', rotate: 'none', scale: 'none',}}data-svg-origin="394.4299831390381 537.789960861206" transform="matrix(1,0,0,1,0,0)"></ellipse>
             </g>
             <g class="real-env-icon-group">
-                <g class="real-env-icon" data-svg-origin="201.97000122070312 520.5999755859375" transform="matrix(1,0,0,1,0,0)" style={{translate: 'none', rotate: 'none', scale: 'none', transformOrigin: '0px 0px'}}>
-                    <circle cx="212.8" cy="531.43" r="10.83" style={{fill: '#454d51', opacity: .85, stroke: '#fff', strokeMiterlimit: 10, strokeWidth: '.5px'}}></circle>
+                <g class="real-env-icon" data-svg-origin="201.97000122070312 520.5999755859375" transform="matrix(1,0,0,1,0,0)" style={{translate: 'none', rotate: 'none', scale: 'none', transformOrigin: '0px 0px', animationDuration: '3s', animationIterationCount: 'infinite',}} ref={iconRef} className={`real-env-icon ${currentIndex === 0 || currentIndex === 7 || currentIndex === 8 ? 'bounce' : ''}`}>
+                    <circle cx="212.8" cy="531.43" r="10.83" style={{fill: currentIndex === 0 || currentIndex === 7 || currentIndex === 8 ? '#454d51' : '#9b9b9b', opacity: .85, stroke: '#fff', strokeMiterlimit: 10, strokeWidth: '.5px'}}></circle>
                     <g>
                         <path d="m212.8,538.32s-.09-.01-.12-.04c-1.51-.96-2.78-2.18-3.77-3.64-1.8-2.67-2.19-5.4-2.2-7.22,0-.12.09-.22.21-.23,1.29-.12,2.5-.48,3.62-1.09.73-.4,1.4-.9,2-1.49.09-.09.24-.09.33,0,.62.6,1.31,1.11,2.06,1.51,1.15.62,2.4.97,3.73,1.06.12,0,.22.12.22.24-.06,1.86-.51,4.65-2.37,7.34-.95,1.38-2.16,2.57-3.58,3.51-.04.03-.08.04-.13.04Zm-5.62-10.69c.04,1.75.45,4.28,2.11,6.75.92,1.37,2.1,2.52,3.5,3.43,1.32-.9,2.44-2.01,3.33-3.31,1.72-2.49,2.2-5.07,2.28-6.87-1.31-.12-2.55-.49-3.69-1.1-.72-.39-1.4-.87-2.01-1.44-.59.55-1.24,1.02-1.94,1.41-1.1.61-2.31.99-3.58,1.13Z" style={{fill: '#fff', strokeWidth: 0}}></path>
                         <path d="m212,534.71l-1.56-2.31c-.07-.11-.04-.25.06-.32s.25-.04.32.06l1.02,1.5c.29-.85.66-1.67,1.11-2.45.48-.84,1.05-1.63,1.7-2.35.09-.1.23-.1.33-.02.1.09.1.23.02.33-.63.7-1.18,1.46-1.65,2.27-.51.89-.92,1.83-1.22,2.81l-.14.47Z" style={{fill: '#fff', strokeWidth: 0}}></path>
                     </g>
                 </g>
-                <path class="real-env-icon-shadow" d="m225.05,546.72c0,1.15-5.38,2.08-12.01,2.08-6.63,0-12.01-.93-12.01-2.08s5.38-2.08,12.01-2.08,12.01.93,12.01,2.08Z" style={{fill: 'rgb(110, 124, 124)', opacity: 0.75, strokeWidth: 0, transformOrigin: '0px 0px', translate: 'none', rotate: 'none', scale: 'none',}} data-svg-origin="213.04000854492188 546.719970703125" transform="matrix(1,0,0,1,0,0)"></path>
+                <path class="real-env-icon-shadow" d="m225.05,546.72c0,1.15-5.38,2.08-12.01,2.08-6.63,0-12.01-.93-12.01-2.08s5.38-2.08,12.01-2.08,12.01.93,12.01,2.08Z" style={{fill:  currentIndex === 8 ? 'rgb(243, 126, 71)' : 'rgb(110, 124, 124)', opacity: 0.75, strokeWidth: 0, transformOrigin: '0px 0px', translate: 'none', rotate: 'none', scale: 'none',}} data-svg-origin="213.04000854492188 546.719970703125" transform="matrix(1,0,0,1,0,0)"></path>
             </g>
             <g class="real-env-icon-group">
                 <g class="real-env-icon-position" style={{transform:'translate(323px, 519px)'}}>
-                    <g class="real-env-icon" data-svg-origin="2.3199996948242188 2.4700002670288086" transform="matrix(1,0,0,1,0,0)" style={{translate: 'none', rotate: 'none', scale: 'none', transformOrigin: '0px 0px'}}>
-                        <circle style={{ opacity:0.85,fill:'#464D52',stroke:'#FFFFFF',strokeWidth:0.5,strokeMiterlimit:10}} cx="13.04" cy="13.19" r="10.72"></circle>
+                    <g class="real-env-icon" data-svg-origin="2.3199996948242188 2.4700002670288086" transform="matrix(1,0,0,1,0,0)" style={{translate: 'none', rotate: 'none', scale: 'none', transformOrigin: '0px 0px', animationDuration: '3s', animationIterationCount: 'infinite',}} ref={iconRef} className={`real-env-icon ${currentIndex === 0 || currentIndex === 7 || currentIndex === 8 ? 'bounce' : ''}`}>
+                        <circle style={{ opacity:0.85,fill: currentIndex === 0 || currentIndex === 7 || currentIndex === 8 ? '#454d51' : '#9b9b9b',stroke:'#FFFFFF',strokeWidth:0.5,strokeMiterlimit:10}} cx="13.04" cy="13.19" r="10.72"></circle>
                         <g>
                             <g>
                                 <path style={{fillRule:'evenodd',clipRule:'evenodd',fill:'#FFFFFF',}} d="M8.19,13.9c0.07,0.44,0.24,0.84,0.73,1.08
@@ -3007,11 +3020,11 @@ const Animation = () => {
                         </g>
                     </g>
                 </g>
-                <path class="real-env-icon-shadow" d="m348.95,547.65c0,1.15-5.38,2.08-12.01,2.08-6.63,0-12.01-.93-12.01-2.08s5.38-2.08,12.01-2.08,12.01.93,12.01,2.08Z" style={{fill: 'rgb(110, 124, 124)', opacity: 0.75, strokeWidth: 0, transformOrigin: '0px 0px', translate: 'none', rotate: 'none', scale: 'none',}} data-svg-origin="336.94000244140625 547.6500244140625" transform="matrix(1,0,0,1,0,0)"></path>
+                <path class="real-env-icon-shadow" d="m348.95,547.65c0,1.15-5.38,2.08-12.01,2.08-6.63,0-12.01-.93-12.01-2.08s5.38-2.08,12.01-2.08,12.01.93,12.01,2.08Z" style={{fill:  currentIndex === 8 ? 'rgb(243, 126, 71)' : 'rgb(110, 124, 124)', opacity: 0.75, strokeWidth: 0, transformOrigin: '0px 0px', translate: 'none', rotate: 'none', scale: 'none',}} data-svg-origin="336.94000244140625 547.6500244140625" transform="matrix(1,0,0,1,0,0)"></path>
             </g>
             <g class="real-env-icon-group">
-                <g class="real-env-icon" data-svg-origin="447.69000244140625 497.2300109863281" transform="matrix(1,0,0,1,0,0)" style={{translate: 'none', rotate: 'none', scale: 'none', transformOrigin: '0px 0px'}}>
-                    <circle cx="458.56" cy="508.1" r="10.87" style={{fill: '#454d51', opacity: .85, stroke: '#fff', strokeMiterlimit: 10, strokeWidth: '.5px'}}></circle>
+                <g class="real-env-icon" data-svg-origin="447.69000244140625 497.2300109863281" transform="matrix(1,0,0,1,0,0)" style={{translate: 'none', rotate: 'none', scale: 'none', transformOrigin: '0px 0px', animationDuration: '3s', animationIterationCount: 'infinite',}} ref={iconRef} className={`real-env-icon ${currentIndex === 0 || currentIndex === 7 || currentIndex === 8 ? 'bounce' : ''}`}>
+                    <circle cx="458.56" cy="508.1" r="10.87" style={{fill: currentIndex === 0 || currentIndex === 7 || currentIndex === 8 ? '#454d51' : '#9b9b9b', opacity: .85, stroke: '#fff', strokeMiterlimit: 10, strokeWidth: '.5px'}}></circle>
                     <g>
                         <g>
                             <g>
@@ -3041,33 +3054,33 @@ const Animation = () => {
                         </g>
                     </g>
                 </g>
-                <ellipse class="real-env-icon-shadow" cx="458.43" cy="524.21" rx="12.01" ry="2.08" style={{fill: 'rgb(110, 124, 124)', opacity: 0.75, strokeWidth: 0, transformOrigin: '0px 0px', translate: 'none', rotate: 'none', scale: 'none',}} data-svg-origin="458.4299831390381 524.2100048065186" transform="matrix(1,0,0,1,0,0)"></ellipse>
+                <ellipse class="real-env-icon-shadow" cx="458.43" cy="524.21" rx="12.01" ry="2.08" style={{fill: currentIndex === 8 ? 'rgb(243, 126, 71)' : 'rgb(110, 124, 124)', opacity: 0.75, strokeWidth: 0, transformOrigin: '0px 0px', translate: 'none', rotate: 'none', scale: 'none',}} data-svg-origin="458.4299831390381 524.2100048065186" transform="matrix(1,0,0,1,0,0)"></ellipse>
             </g>
             <g class="real-env-icon-group">
-                <g class="real-env-icon" data-svg-origin="263.1600036621094 534.6599731445312" transform="matrix(1,0,0,1,0,0)" style={{translate: 'none', rotate: 'none', scale: 'none', transformOrigin: '0px 0px'}}>
-                    <circle cx="273.94" cy="545.44" r="10.78" style={{fill: '#454d51', opacity: .85, stroke: '#fff', strokeMiterlimit: 10, strokeWidth: '.5px'}}></circle>
+                <g class="real-env-icon" data-svg-origin="263.1600036621094 534.6599731445312" transform="matrix(1,0,0,1,0,0)" style={{translate: 'none', rotate: 'none', scale: 'none', transformOrigin: '0px 0px', animationDuration: '3s', animationIterationCount: 'infinite',}} ref={iconRef} className={`real-env-icon ${currentIndex === 0 || currentIndex === 7 || currentIndex === 8 ? 'bounce' : ''}`}>
+                    <circle cx="273.94" cy="545.44" r="10.78" style={{fill: currentIndex === 0 || currentIndex === 7 || currentIndex === 8 ? '#454d51' : '#9b9b9b', opacity: .85, stroke: '#fff', strokeMiterlimit: 10, strokeWidth: '.5px'}}></circle>
                     <g>
                         <path d="m278.27,549.31h-8.76s-.48,0-.93-.27c-.42-.25-.93-.77-.93-1.86,0-.62.28-1.24.8-1.78.24-.25.48-.43.63-.54-.08-.43.08-.99.1-1.07h0s.18-.56.61-1.11c.58-.73,1.36-1.11,2.25-1.11,1.12,0,1.81.5,2.19.92.24.27.39.54.48.72l.32-.1c.1-.03,1.19-.38,2.09.18.73.46,1.09,1.38,1.21,1.76.59.03,1.05.24,1.38.6.58.64.53,1.56.51,1.69,0,.6-.18,1.07-.54,1.42-.53.52-1.27.54-1.42.54Zm-8.64-5.38c-.07.26-.15.74-.06.95.05.11,0,.24-.1.29-.01,0-1.36.8-1.36,2.01,0,.7.24,1.19.7,1.46.34.2.7.2.7.2h8.75s.67.01,1.11-.42c.26-.25.39-.62.39-1.09v-.02s.07-.83-.4-1.35c-.27-.3-.68-.45-1.21-.45-.11,0-.2-.07-.23-.18h0s-.31-1.18-1.06-1.65c-.73-.46-1.69-.14-1.7-.14,0,0,0,0,0,0l-.53.16c-.12.04-.25-.03-.29-.15-.02-.06-.51-1.52-2.31-1.52-.75,0-1.38.31-1.88.93-.36.46-.52.93-.53.97Z" style={{fill: '#fff', strokeWidth: 0}}></path>
                         <path d="m270.3,545.1c-.13,0-.23-.11-.23-.23,0-1.15.93-2.08,2.08-2.08.28,0,.55.06.81.16.12.05.17.19.12.3s-.19.17-.3.12c-.2-.08-.41-.13-.63-.13-.89,0-1.61.72-1.61,1.61,0,.13-.11.23-.24.23Z" style={{fill: '#fff', strokeWidth: 0}}></path>
                         <path d="m277.05,545.46c-.11,0-.2-.07-.23-.18-.05-.25-.26-.49-.56-.66-.32-.18-.68-.24-.91-.15-.12.04-.25-.02-.3-.14s.02-.25.14-.3c.36-.13.86-.06,1.29.19.42.23.7.59.79.97.03.12-.05.25-.18.28-.02,0-.03,0-.05,0Z" style={{fill: '#fff', strokeWidth: 0}}></path>
                     </g>
                 </g>
-                <path class="real-env-icon-shadow" d="m285.51,561.23c0,1.15-5.38,2.08-12.01,2.08-6.63,0-12.01-.93-12.01-2.08s5.38-2.08,12.01-2.08,12.01.93,12.01,2.08Z" style={{fill: 'rgb(110, 124, 124)', opacity: 0.75, strokeWidth: 0, transformOrigin: '0px 0px', translate: 'none', rotate: 'none', scale: 'none',}} data-svg-origin="273.5 561.22998046875" transform="matrix(1,0,0,1,0,0)"></path>
+                <path class="real-env-icon-shadow" d="m285.51,561.23c0,1.15-5.38,2.08-12.01,2.08-6.63,0-12.01-.93-12.01-2.08s5.38-2.08,12.01-2.08,12.01.93,12.01,2.08Z" style={{fill: currentIndex === 8 ? 'rgb(243, 126, 71)' : 'rgb(110, 124, 124)', opacity: 0.75, strokeWidth: 0, transformOrigin: '0px 0px', translate: 'none', rotate: 'none', scale: 'none',}} data-svg-origin="273.5 561.22998046875" transform="matrix(1,0,0,1,0,0)"></path>
             </g>
             <g class="real-env-icon-group">
-                <g class="real-env-icon" data-svg-origin="78.20999908447266 495.67999267578125" transform="matrix(1,0,0,1,0,0)" style={{translate: 'none', rotate: 'none', scale: 'none', transformOrigin: '0px 0px'}}>
-                    <circle cx="88.94" cy="506.41" r="10.73" style={{fill: '#454d51', opacity: .85, stroke: '#fff', strokeMiterlimit: 10, strokeWidth: '.5px'}}></circle>
+                <g class="real-env-icon" data-svg-origin="78.20999908447266 495.67999267578125" transform="matrix(1,0,0,1,0,0)" style={{translate: 'none', rotate: 'none', scale: 'none', transformOrigin: '0px 0px', animationDuration: '3s', animationIterationCount: 'infinite',}} ref={iconRef} className={`real-env-icon ${currentIndex === 0 || currentIndex === 7 || currentIndex === 8 ? 'bounce' : ''}`}>
+                    <circle cx="88.94" cy="506.41" r="10.73" style={{fill: currentIndex === 0 || currentIndex === 7 || currentIndex === 8 ? '#454d51' : '#9b9b9b', opacity: .85, stroke: '#fff', strokeMiterlimit: 10, strokeWidth: '.5px'}}></circle>
                     <g>
                         <path d="m91.2,508.35h-4.52v-3.72h.56v-.07c0-.18,0-.35,0-.52.02-.59.33-1.13.85-1.43.52-.3,1.14-.31,1.65-.02.57.31.88.83.89,1.49,0,.16,0,.33,0,.49v.05h.56v3.73h0Zm-4.16-.36h3.79v-3h-.56v-.9c0-.53-.25-.93-.71-1.18-.41-.22-.89-.22-1.3.02-.41.23-.66.65-.67,1.12,0,.17,0,.34,0,.51v.44h-.56v2.99h0Zm2.45-.46h-1.11l.04-.29c.02-.13.03-.25.05-.37v-.05c.02-.06.02-.13.04-.19.02-.09,0-.11-.04-.16-.1-.1-.15-.23-.15-.37,0-.17.08-.34.21-.46.22-.21.59-.21.82,0,.12.11.2.27.2.43,0,.15-.05.29-.15.39-.04.04-.04.06-.03.18l.12.89Zm-.7-.37h.28l-.06-.47c-.02-.13-.04-.31.13-.48.04-.04.05-.09.05-.13,0-.06-.03-.13-.08-.18-.09-.08-.24-.09-.33,0-.06.05-.09.12-.09.19,0,.04.01.08.04.11.17.17.16.35.14.48-.01.05-.02.11-.03.17v.05c-.02.09-.03.17-.04.25Zm1.21-2.18h-2.15v-.19c.02-.11.02-.22.01-.34,0-.23-.01-.47.06-.71.1-.32.36-.57.7-.67.34-.1.71-.04.97.18.26.22.4.5.41.84,0,.17,0,.33,0,.5v.4h0Zm-1.77-.37h1.41v-.04c0-.16,0-.33,0-.48,0-.24-.09-.42-.27-.56-.17-.14-.41-.18-.63-.11-.22.07-.39.23-.45.43-.06.19-.05.38-.04.59v.18Z" style={{fill: '#fff', strokeWidth: 0}}></path>
                         <path d="m88.95,512.87s-.09-.01-.13-.04c-.1-.07-.2-.14-.3-.21-.1-.07-.2-.14-.3-.21-.45-.32-.9-.63-1.32-.95-.45-.34-.88-.77-1.32-1.32-.45-.56-.82-1.17-1.11-1.8-.32-.69-.54-1.43-.66-2.19-.08-.49-.11-1-.11-1.57v-2.84c0-.1.06-.19.16-.21l3.08-.97c.64-.2,1.29-.4,1.93-.6t0,0s.11-.02.15,0l.25.08c.6.19,1.23.39,1.84.57l2.93.92c.09.03.16.11.16.21v1.55c0,.5,0,1.03,0,1.54,0,1.06-.2,2.09-.58,3.07-.34.88-.83,1.7-1.46,2.43-.49.58-1.1,1.12-1.87,1.64-.28.19-.57.4-.85.6-.12.08-.24.17-.36.25-.04.03-.08.04-.13.04Zm-4.8-10.96v2.67c0,.54.04,1.03.11,1.5.11.72.33,1.42.63,2.07.27.6.63,1.17,1.05,1.71.42.52.82.93,1.24,1.24.41.32.86.63,1.3.94.1.07.2.14.3.21.06.04.11.08.17.12.08-.05.15-.11.23-.16.28-.2.57-.4.86-.6.73-.5,1.31-1.01,1.78-1.57.59-.7,1.06-1.47,1.38-2.31.36-.93.55-1.91.55-2.91,0-.51,0-1.04,0-1.54v-1.39l-2.77-.87c-.62-.19-1.24-.39-1.84-.57l-.19-.06c-.63.19-1.25.39-1.88.59l-2.92.92Zm4.72-1.95s-.04.02-.05.03c.01-.01.03-.02.05-.03Z" style={{fill: '#fff', strokeWidth: 0}}></path>
                     </g>
                 </g>
-                <ellipse class="real-env-icon-shadow" cx="88.57" cy="521.6" rx="12.01" ry="2.08" style={{fill: 'rgb(110, 124, 124)', opacity: 0.75, strokeWidth: 0, transformOrigin: '0px 0px', translate: 'none', rotate: 'none', scale: 'none',}} data-svg-origin="88.56999778747559 521.5999584197998" transform="matrix(1,0,0,1,0,0)"></ellipse>
+                <ellipse class="real-env-icon-shadow" cx="88.57" cy="521.6" rx="12.01" ry="2.08" style={{fill: currentIndex === 8 ? 'rgb(243, 126, 71)' : 'rgb(110, 124, 124)', opacity: 0.75, strokeWidth: 0, transformOrigin: '0px 0px', translate: 'none', rotate: 'none', scale: 'none',}} data-svg-origin="88.56999778747559 521.5999584197998" transform="matrix(1,0,0,1,0,0)"></ellipse>
             </g>
             <g class="real-env-icon-group">
                 <g class="real-env-icon-position" style={{transform:'translate(140px, 504px)'}}>
-                    <g class="real-env-icon" data-svg-origin="2.1300010681152344 2.410000801086426" transform="matrix(1,0,0,1,0,0)" style={{translate: 'none', rotate: 'none', scale: 'none', transformOrigin: '0px 0px'}}>
-                        <circle style={{opacity:0.85,fill:'#464D52',stroke:'#FFFFFF',strokeWidth:0.5,enableBackground:'new'}} cx="12.85" cy="13.13" r="10.72"></circle>
+                    <g class="real-env-icon" data-svg-origin="2.1300010681152344 2.410000801086426" transform="matrix(1,0,0,1,0,0)" style={{translate: 'none', rotate: 'none', scale: 'none', transformOrigin: '0px 0px', animationDuration: '3s', animationIterationCount: 'infinite',}} ref={iconRef} className={`real-env-icon ${currentIndex === 0 || currentIndex === 7 || currentIndex === 8 ? 'bounce' : ''}`}>
+                        <circle style={{opacity:0.85,fill: currentIndex === 0 || currentIndex === 7 || currentIndex === 8 ? '#454d51' : '#9b9b9b',stroke:'#FFFFFF',strokeWidth:0.5,enableBackground:'new'}} cx="12.85" cy="13.13" r="10.72"></circle>
                         <ellipse style={{fill:'none',stroke:'#FFFFFF',strokeWidth:0.5}} cx="12.85" cy="8.34" rx="6.16" ry="2.58"></ellipse>
                         <path style={{fill:'none',stroke:'#FFFFFF',strokeWidth:0.5}} d="M19,11.33c0,1.42-2.76,2.58-6.16,2.58s-6.16-1.16-6.16-2.58"></path>
                         <path style={{fill:'none',stroke:'#FFFFFF',strokeWidth:0.5}} d="M19,17.31c0,1.42-2.76,2.58-6.16,2.58s-6.16-1.16-6.16-2.58"></path>
@@ -3079,14 +3092,11 @@ const Animation = () => {
                         <circle style={{fill:'#FFFFFF'}} cx="17.17" cy="17.53" r="0.5"></circle>
                     </g>
                 </g>
-                <ellipse class="real-env-icon-shadow" cx="153.25" cy="532.25" rx="12.01" ry="2.08" style={{fill: 'rgb(110, 124, 124)', opacity: 0.75, strokeWidth: 0, transformOrigin: '0px 0px', translate: 'none', rotate: 'none', scale: 'none',}} data-svg-origin="153.2500057220459 532.2499828338623" transform="matrix(1,0,0,1,0,0)"></ellipse>
+                <ellipse class="real-env-icon-shadow" cx="153.25" cy="532.25" rx="12.01" ry="2.08" style={{fill: currentIndex === 8 ? 'rgb(243, 126, 71)' : 'rgb(110, 124, 124)', opacity: 0.75, strokeWidth: 0, transformOrigin: '0px 0px', translate: 'none', rotate: 'none', scale: 'none',}} data-svg-origin="153.2500057220459 532.2499828338623" transform="matrix(1,0,0,1,0,0)"></ellipse>
             </g>
         </g>
         
-        <g class="vendor-layer" style={{
-    opacity: currentIndex === 8 ? 0.25 : 1,
-    transition: 'opacity 0.5s ease-in-out' // Add a transition for smooth animation
-  }} filter="url(#filter-vendor-layer)">
+        <g class="vendor-layer" style={{ opacity: currentIndex === 8 ? 0.25 : 1, transition: 'opacity 0.5s ease-in-out'}} filter="url(#filter-vendor-layer)">
             <g>
                 <g>
                     <path d="m536.54,421.59v13.03l-.02.23c-.1.74-.59,1.43-1.5,1.65l-260.2,64.37c-.19.05-.39.07-.58.06v-12.98c.19.02.39,0,.58-.05l260.2-64.37c1.03-.26,1.52-1.1,1.52-1.94Z" style={{fill: '#fff', strokeWidth: 0}}></path>
@@ -3194,31 +3204,31 @@ const Animation = () => {
         <g class="vendor-arrows vendor-arrows-top" filter="url(#filter-vendor-arrows)" style={{
     opacity: currentIndex === 8 ? 0.25 : 1,
     transition: 'opacity 0.5s ease-in-out'}}>
-            <line x1="60.61" y1="394" x2="60.61" y2="429" style={{fill: 'none', stroke: 'rgb(243, 126, 71', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '9px', 
+            <line x1="60.61" y1="394" x2="60.61" y2="429" style={{fill: 'none', stroke: currentIndex === 0 || currentIndex === 7 ? 'rgb(243, 126, 71)' : '#9b9b9b', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '9px', 
                animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></line>
-            <line x1="121.72" y1="410" x2="121.72" y2="444" style={{fill: 'none', stroke: 'rgb(243, 126, 71', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '9px',
+            <line x1="121.72" y1="410" x2="121.72" y2="444" style={{fill: 'none', stroke: currentIndex === 0 || currentIndex === 7 ? 'rgb(243, 126, 71)' : '#9b9b9b', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '9px',
                animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></line>
-            <line x1="182.84" y1="425" x2="182.84" y2="458" style={{fill: 'none', stroke: 'rgb(243, 126, 71', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '9px',
+            <line x1="182.84" y1="425" x2="182.84" y2="458" style={{fill: 'none', stroke: currentIndex === 0 || currentIndex === 7 ? 'rgb(243, 126, 71)' : '#9b9b9b', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '9px',
                animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></line>
-            <line x1="243.96" y1="440" x2="243.96" y2="471" style={{fill: 'none', stroke: 'rgb(243, 126, 71', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '9px',
+            <line x1="243.96" y1="440" x2="243.96" y2="471" style={{fill: 'none', stroke: currentIndex === 0 || currentIndex === 7 ? 'rgb(243, 126, 71)' : '#9b9b9b', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '9px',
                animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></line>
-            <line x1="305.07" y1="440" x2="305.07" y2="472" style={{fill: 'none', stroke: 'rgb(243, 126, 71', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '9px',
+            <line x1="305.07" y1="440" x2="305.07" y2="472" style={{fill: 'none', stroke: currentIndex === 0 || currentIndex === 7 ? 'rgb(243, 126, 71)' : '#9b9b9b', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '9px',
                animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></line>
-            <line x1="366.19" y1="425" x2="366.19" y2="456" style={{fill: 'none', stroke: 'rgb(243, 126, 71', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '9px',
+            <line x1="366.19" y1="425" x2="366.19" y2="456" style={{fill: 'none', stroke: currentIndex === 0 || currentIndex === 7 ? 'rgb(243, 126, 71)' : '#9b9b9b', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '9px',
                animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></line>
-            <line x1="427.31" y1="412" x2="427.31" y2="442" style={{fill: 'none', stroke: 'rgb(243, 126, 71', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '9px',
+            <line x1="427.31" y1="412" x2="427.31" y2="442" style={{fill: 'none', stroke: currentIndex === 0 || currentIndex === 7 ? 'rgb(243, 126, 71)' : '#9b9b9b', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '9px',
                animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></line>
-            <line x1="488.42" y1="397" x2="488.42" y2="426" style={{fill: 'none', stroke: 'rgb(243, 126, 71', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '9px',
+            <line x1="488.42" y1="397" x2="488.42" y2="426" style={{fill: 'none', stroke: currentIndex === 0 || currentIndex === 7 ? 'rgb(243, 126, 71)' : '#9b9b9b', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '9px',
                animation: currentIndex === 0 || currentIndex === 7 ? 'upwardAnimation 1s linear infinite' : 'none',}}></line>
 
-            <polyline points="57.29 394.19 60.64 390.83 64 394.19" style={{fill: 'none', stroke: '#f37e47', strokeLinecap: 'round', strokeMiterlimit: 10}}></polyline>
-            <polyline points="118.4 409.44 121.76 406.09 125.11 409.44" style={{fill: 'none', stroke: '#f37e47', strokeLinecap: 'round', strokeMiterlimit: 10}}></polyline>
-            <polyline points="179.52 424.89 182.87 421.53 186.23 424.89" style={{fill: 'none', stroke: '#f37e47', strokeLinecap: 'round', strokeMiterlimit: 10}}></polyline>
-            <polyline points="240.64 439.4 243.99 436.04 247.35 439.4" style={{fill: 'none', stroke: '#f37e47', strokeLinecap: 'round', strokeMiterlimit: 10}}></polyline>
-            <polyline points="301.75 439.4 305.11 436.04 308.46 439.4" style={{fill: 'none', stroke: '#f37e47', strokeLinecap: 'round', strokeMiterlimit: 10}}></polyline>
-            <polyline points="362.87 424.89 366.22 421.53 369.58 424.89" style={{fill: 'none', stroke: '#f37e47', strokeLinecap: 'round', strokeMiterlimit: 10}}></polyline>
-            <polyline points="423.98 410.93 427.34 407.58 430.69 410.93" style={{fill: 'none', stroke: '#f37e47', strokeLinecap: 'round', strokeMiterlimit: 10}}></polyline>
-            <polyline points="485.1 396.98 488.46 393.62 491.81 396.98" style={{fill: 'none', stroke: '#f37e47', strokeLinecap: 'round', strokeMiterlimit: 10}}></polyline>
+            <polyline points="57.29 394.19 60.64 390.83 64 394.19" style={{fill: 'none', stroke: currentIndex === 0 || currentIndex === 7 ? '#f37e47' : '#9b9b9b', strokeLinecap: 'round', strokeMiterlimit: 10}}></polyline>
+            <polyline points="118.4 409.44 121.76 406.09 125.11 409.44" style={{fill: 'none', stroke: currentIndex === 0 || currentIndex === 7 ? '#f37e47' : '#9b9b9b', strokeLinecap: 'round', strokeMiterlimit: 10}}></polyline>
+            <polyline points="179.52 424.89 182.87 421.53 186.23 424.89" style={{fill: 'none', stroke: currentIndex === 0 || currentIndex === 7 ? '#f37e47' : '#9b9b9b', strokeLinecap: 'round', strokeMiterlimit: 10}}></polyline>
+            <polyline points="240.64 439.4 243.99 436.04 247.35 439.4" style={{fill: 'none', stroke: currentIndex === 0 || currentIndex === 7 ? '#f37e47' : '#9b9b9b', strokeLinecap: 'round', strokeMiterlimit: 10}}></polyline>
+            <polyline points="301.75 439.4 305.11 436.04 308.46 439.4" style={{fill: 'none', stroke: currentIndex === 0 || currentIndex === 7 ? '#f37e47' : '#9b9b9b', strokeLinecap: 'round', strokeMiterlimit: 10}}></polyline>
+            <polyline points="362.87 424.89 366.22 421.53 369.58 424.89" style={{fill: 'none', stroke: currentIndex === 0 || currentIndex === 7 ? '#f37e47' : '#9b9b9b', strokeLinecap: 'round', strokeMiterlimit: 10}}></polyline>
+            <polyline points="423.98 410.93 427.34 407.58 430.69 410.93" style={{fill: 'none', stroke: currentIndex === 0 || currentIndex === 7 ? '#f37e47' : '#9b9b9b', strokeLinecap: 'round', strokeMiterlimit: 10}}></polyline>
+            <polyline points="485.1 396.98 488.46 393.62 491.81 396.98" style={{fill: 'none', stroke: currentIndex === 0 || currentIndex === 7 ? '#f37e47' : '#9b9b9b', strokeLinecap: 'round', strokeMiterlimit: 10}}></polyline>
         </g>
 
 
@@ -3359,96 +3369,96 @@ const Animation = () => {
                 <path d="m536.5,188.71c2.31-.01,4.18-1.9,4.17-4.21-.01-2.31-1.9-4.18-4.21-4.17-2.31.01-4.18,1.9-4.17,4.21.01,2.31,1.9,4.18,4.21,4.17Zm-2.64-6.78c.69-.7,1.62-1.09,2.6-1.09h.02c2.02,0,3.67,1.64,3.69,3.67,0,.98-.37,1.91-1.07,2.61-.69.7-1.62,1.09-2.6,1.09h-.02c-.98,0-1.9-.38-2.59-1.07-.7-.69-1.09-1.62-1.09-2.6s.37-1.91,1.07-2.61Z" style={{fill: '#fff', strokeWidth: 0,}}></path>
             </g>
             <g>
-                <line x1="333.1" y1="291.06" x2="333.1" y2="292.56" style={{fill: "none", stroke: '#f56682', strokeLinecap: "round", strokeMiterlimit: 10, }}></line>
-                <line x1="333.1" y1="295.39" x2="333.11" y2="333.63" style={{fill: 'none', stroke: '#f56682', strokeDasharray: '0 0 2.83 2.83', strokeLinecap: 'round', strokeMiterlimit: 10,}}></line>
-                <line x1="333.11" y1="335.04" x2="333.11" y2="336.54" style={{fill: "none", stroke: '#f56682', strokeLinecap: "round", strokeMiterlimit: 10,}}></line>
+                <line x1="333.1" y1="291.06" x2="333.1" y2="292.56" style={{fill: "none", stroke: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b' : '#9b9b9b', strokeLinecap: "round", strokeMiterlimit: 10, }}></line>
+                <line x1="333.1" y1="295.39" x2="333.11" y2="333.63" style={{fill: 'none', stroke: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b' : '#9b9b9b', strokeDasharray: '0 0 2.83 2.83', strokeLinecap: 'round', strokeMiterlimit: 10,}}></line>
+                <line x1="333.11" y1="335.04" x2="333.11" y2="336.54" style={{fill: "none", stroke: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b' : '#9b9b9b', strokeLinecap: "round", strokeMiterlimit: 10,}}></line>
             </g>
             <g>
-                <line x1="333.1" y1="259.82" x2="333.1" y2="261.32" style={{fill: "none", stroke: '#f56682', strokeLinecap: "round", strokeMiterlimit: 10,}}></line>
-                <line x1="333.1" y1="264.01" x2="333.1" y2="268.04" style={{fill: 'none', stroke: '#f56682', strokeDasharray: '0 0 2.83 2.83', strokeLinecap: 'round', strokeMiterlimit: 10,}}></line>
-                <line x1="333.1" y1="269.39" x2="333.1" y2="270.89" style={{fill: "none", stroke: '#f56682', strokeLinecap: "round", strokeMiterlimit: 10,}}></line>
+                <line x1="333.1" y1="259.82" x2="333.1" y2="261.32" style={{fill: "none", stroke: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b' : '#9b9b9b', strokeLinecap: "round", strokeMiterlimit: 10,}}></line>
+                <line x1="333.1" y1="264.01" x2="333.1" y2="268.04" style={{fill: 'none', stroke: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b' : '#9b9b9b', strokeDasharray: '0 0 2.83 2.83', strokeLinecap: 'round', strokeMiterlimit: 10,}}></line>
+                <line x1="333.1" y1="269.39" x2="333.1" y2="270.89" style={{fill: "none", stroke: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b' : '#9b9b9b', strokeLinecap: "round", strokeMiterlimit: 10,}}></line>
             </g>
             <g>
-                <line x1="214.03" y1="291.06" x2="214.03" y2="292.56" style={{fill: "none", stroke: '#f56682', strokeLinecap: "round", strokeMiterlimit: 10,}}></line>
-                <line x1="214.03" y1="295.3" x2="214.03" y2="321.39" style={{fill: 'none', stroke: '#f56682', strokeDasharray: '0 0 2.75 2.75', strokeLinecap: 'round', strokeMiterlimit: 10}}></line>
-                <line x1="214.03" y1="322.77" x2="214.03" y2="324.27" style={{fill: "none", stroke: '#f56682', strokeLinecap: "round", strokeMiterlimit: 10,}}></line>
+                <line x1="214.03" y1="291.06" x2="214.03" y2="292.56" style={{fill: "none", stroke: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b' : '#9b9b9b', strokeLinecap: "round", strokeMiterlimit: 10,}}></line>
+                <line x1="214.03" y1="295.3" x2="214.03" y2="321.39" style={{fill: 'none', stroke: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b' : '#9b9b9b', strokeDasharray: '0 0 2.75 2.75', strokeLinecap: 'round', strokeMiterlimit: 10}}></line>
+                <line x1="214.03" y1="322.77" x2="214.03" y2="324.27" style={{fill: "none", stroke: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b' : '#9b9b9b', strokeLinecap: "round", strokeMiterlimit: 10,}}></line>
             </g>
             <g>
-                <line x1="214.03" y1="250.98" x2="214.03" y2="252.48" style={{fill: "none", stroke: '#f56682', strokeLinecap: "round", strokeMiterlimit: 10,}}></line>
-                <line x1="214.03" y1="255.17" x2="214.03" y2="259.2" style={{fill: 'none', stroke: '#f56682', strokeDasharray: '0 0 2.83 2.83', strokeLinecap: 'round', strokeMiterlimit: 10,}}></line>
-                <line x1="214.03" y1="260.55" x2="214.03" y2="262.05" style={{fill: "none", stroke: '#f56682', strokeLinecap: "round", strokeMiterlimit: 10,}}></line>
+                <line x1="214.03" y1="250.98" x2="214.03" y2="252.48" style={{fill: "none", stroke: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b' : '#9b9b9b', strokeLinecap: "round", strokeMiterlimit: 10,}}></line>
+                <line x1="214.03" y1="255.17" x2="214.03" y2="259.2" style={{fill: 'none', stroke: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b' : '#9b9b9b', strokeDasharray: '0 0 2.83 2.83', strokeLinecap: 'round', strokeMiterlimit: 10,}}></line>
+                <line x1="214.03" y1="260.55" x2="214.03" y2="262.05" style={{fill: "none", stroke: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b' : '#9b9b9b', strokeLinecap: "round", strokeMiterlimit: 10,}}></line>
             </g>
             <g style={{opacity: .3,}}>
                 <g style={{opacity: .5,}}>
                     <g>
-                        <line x1="214.03" y1="264.93" x2="214.03" y2="266.43" style={{fill: "none", stroke: '#f56682', strokeLinecap: "round", strokeMiterlimit: 10,}}></line>
-                        <line x1="214.03" y1="269.12" x2="214.03" y2="273.16" style={{fill: 'none', stroke: '#f56682', strokeDasharray: '0 0 2.83 2.83', strokeLinecap: 'round', strokeMiterlimit: 10,}}></line>
-                        <line x1="214.03" y1="274.5" x2="214.03" y2="276" style={{fill: "none", stroke: '#f56682', strokeLinecap: "round", strokeMiterlimit: 10,}}></line>
+                        <line x1="214.03" y1="264.93" x2="214.03" y2="266.43" style={{fill: "none", stroke: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b' : '#9b9b9b', strokeLinecap: "round", strokeMiterlimit: 10,}}></line>
+                        <line x1="214.03" y1="269.12" x2="214.03" y2="273.16" style={{fill: 'none', stroke: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b' : '#9b9b9b', strokeDasharray: '0 0 2.83 2.83', strokeLinecap: 'round', strokeMiterlimit: 10,}}></line>
+                        <line x1="214.03" y1="274.5" x2="214.03" y2="276" style={{fill: "none", stroke: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b' : '#9b9b9b', strokeLinecap: "round", strokeMiterlimit: 10,}}></line>
                     </g>
                 </g>
             </g>
             <g style={{opacity: .3}}>
                 <g style={{opacity: .5}}>
-                    <line x1="333.1" y1="273.86" x2="333.1" y2="276.36" style={{fill: 'none', stroke: '#f56682', strokeDasharray: '0 2.5', strokeLinecap: 'round', strokeMiterlimit: 10}}></line>
+                    <line x1="333.1" y1="273.86" x2="333.1" y2="276.36" style={{fill: 'none', stroke: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b' : '#9b9b9b', strokeDasharray: '0 2.5', strokeLinecap: 'round', strokeMiterlimit: 10}}></line>
                 </g>
             </g>
-            <circle cx="150.8" cy="236.05" r="2.31" style={{fill: '#f56682', strokeWidth: 0,}}></circle>
-            <circle cx="170.53" cy="252.47" r="1.67" style={{fill: '#f56682', strokeWidth: 0,}}></circle>
-            <circle cx="232.76" cy="230.7" r="1.12" style={{fill: '#f56682', strokeWidth: 0,}}></circle>
-            <circle cx="234.99" cy="266.42" r="1.12" style={{fill: '#f56682', strokeWidth: 0,}}></circle>
-            <circle cx="340.2" cy="204.73" r="1.12" style={{fill: '#f56682', strokeWidth: 0,}}></circle>
-            <circle cx="382.34" cy="247.44" r="1.12" style={{fill: '#f56682', strokeWidth: 0,}}></circle>
-            <circle cx="102.43" cy="237.68" r="1.12" style={{fill: '#f56682', strokeWidth: 0,}}></circle>
-            <circle cx="188.76" cy="209.94" r="1.12" style={{fill: '#f56682', strokeWidth: 0,}}></circle>
-            <circle cx="188.11" cy="237.4" r="1.12" style={{fill: '#f56682', strokeWidth: 0,}}></circle>
-            <circle cx="222.8" cy="209.38" r="1.12" style={{fill: '#f56682', strokeWidth: 0,}}></circle>
-            <circle cx="399.92" cy="224.28" r="1.12" style={{fill: '#f56682', strokeWidth: 0,}}></circle>
-            <circle cx="470.99" cy="227.8" r="1.12" style={{fill: '#f56682', strokeWidth: 0,}}></circle>
-            <circle cx="252.01" cy="256.93" r="2.31" style={{fill: '#f56682', strokeWidth: 0,}}></circle>
-            <circle cx="308.57" cy="231.26" r="1.86" style={{fill: '#f56682', strokeWidth: 0,}}></circle>
-            <circle cx="360.29" cy="250.98" r="2.31" style={{fill: '#f56682', strokeWidth: 0,}}></circle>
-            <circle cx="418.34" cy="239.44" r="2.31" style={{fill: '#f56682', strokeWidth: 0,}}></circle>
-            <circle cx="255.36" cy="231.63" r="2.31" style={{fill: '#f56682', strokeWidth: 0,}}></circle>
-            <circle cx="282.99" cy="251.07" r="1.4" style={{fill: '#f56682', strokeWidth: 0,}}></circle>
-            <circle cx="456.71" cy="190.76" r="12.84" style={{fill: '#f56682', stroke: '#fff', strokeMiterlimit: 10, strokeWidth: '.5px'}}></circle>
+            <circle cx="150.8" cy="236.05" r="2.31" style={{fill: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b' : '#9b9b9b', strokeWidth: 0,}}></circle>
+            <circle cx="170.53" cy="252.47" r="1.67" style={{fill: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b' : '#9b9b9b', strokeWidth: 0,}}></circle>
+            <circle cx="232.76" cy="230.7" r="1.12" style={{fill: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b' : '#9b9b9b', strokeWidth: 0,}}></circle>
+            <circle cx="234.99" cy="266.42" r="1.12" style={{fill: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b' : '#9b9b9b', strokeWidth: 0,}}></circle>
+            <circle cx="340.2" cy="204.73" r="1.12" style={{fill: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b' : '#9b9b9b', strokeWidth: 0,}}></circle>
+            <circle cx="382.34" cy="247.44" r="1.12" style={{fill: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b' : '#9b9b9b', strokeWidth: 0,}}></circle>
+            <circle cx="102.43" cy="237.68" r="1.12" style={{fill: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b' : '#9b9b9b', strokeWidth: 0,}}></circle>
+            <circle cx="188.76" cy="209.94" r="1.12" style={{fill: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b' : '#9b9b9b', strokeWidth: 0,}}></circle>
+            <circle cx="188.11" cy="237.4" r="1.12" style={{fill: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b' : '#9b9b9b', strokeWidth: 0,}}></circle>
+            <circle cx="222.8" cy="209.38" r="1.12" style={{fill: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b' : '#9b9b9b', strokeWidth: 0,}}></circle>
+            <circle cx="399.92" cy="224.28" r="1.12" style={{fill: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b' : '#9b9b9b', strokeWidth: 0,}}></circle>
+            <circle cx="470.99" cy="227.8" r="1.12" style={{fill: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b' : '#9b9b9b', strokeWidth: 0,}}></circle>
+            <circle cx="252.01" cy="256.93" r="2.31" style={{fill: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b' : '#9b9b9b', strokeWidth: 0,}}></circle>
+            <circle cx="308.57" cy="231.26" r="1.86" style={{fill: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b' : '#9b9b9b', strokeWidth: 0,}}></circle>
+            <circle cx="360.29" cy="250.98" r="2.31" style={{fill: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b' : '#9b9b9b', strokeWidth: 0,}}></circle>
+            <circle cx="418.34" cy="239.44" r="2.31" style={{fill: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b' : '#9b9b9b', strokeWidth: 0,}}></circle>
+            <circle cx="255.36" cy="231.63" r="2.31" style={{fill: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b' : '#9b9b9b', strokeWidth: 0,}}></circle>
+            <circle cx="282.99" cy="251.07" r="1.4" style={{fill: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b' : '#9b9b9b', strokeWidth: 0,}}></circle>
+            <circle cx="456.71" cy="190.76" r="12.84" style={{fill: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b' : '#9b9b9b', stroke: '#fff', strokeMiterlimit: 10, strokeWidth: '.5px'}}></circle>
             <g>
                 <g>
-                    <line class="threat-arrow" x1="422" y1="218" x2="490" y2="201" style={{fill: 'none', stroke: '#f56682', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '16px', animation: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? 'upwardAnimation 1s linear infinite' : 'none'}}></line>
+                    <line class="threat-arrow" x1="422" y1="218" x2="490" y2="201" style={{fill: 'none', stroke: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b' : '#9b9b9b', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '16px', animation: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? 'upwardAnimation 1s linear infinite' : 'none'}}></line>
                 </g>
-                <polyline points="424.93 220.45 420.81 218.09 422.89 213.5" style={{fill: "none", stroke: '#f56682', strokeLinecap: "round", strokeMiterlimit: 10, animation: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? 'upwardAnimation 1s linear infinite' : 'none'}}></polyline>
+                <polyline points="424.93 220.45 420.81 218.09 422.89 213.5" style={{fill: "none", stroke: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b' : '#9b9b9b', strokeLinecap: "round", strokeMiterlimit: 10, animation: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? 'upwardAnimation 1s linear infinite' : 'none'}}></polyline>
             </g>
             <g>
                 <g>
-                    <line class="threat-arrow" x1="384" y1="210" x2="450.15" y2="194.5" style={{fill: 'none', stroke: '#f56682', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '16px',animation: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? 'upwardAnimation 1s linear infinite' : 'none' }}></line>
+                    <line class="threat-arrow" x1="384" y1="210" x2="450.15" y2="194.5" style={{fill: 'none', stroke: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b' : '#9b9b9b', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '16px',animation: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? 'upwardAnimation 1s linear infinite' : 'none' }}></line>
                 </g>
-                <polyline points="384.55 213.76 380.44 211.39 382.52 206.8" style={{fill: "none", stroke: '#f56682', strokeLinecap: "round", strokeMiterlimit: 10, animation: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? 'upwardAnimation 1s linear infinite' : 'none'}}></polyline>
+                <polyline points="384.55 213.76 380.44 211.39 382.52 206.8" style={{fill: "none", stroke: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b' : '#9b9b9b', strokeLinecap: "round", strokeMiterlimit: 10, animation: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? 'upwardAnimation 1s linear infinite' : 'none'}}></polyline>
             </g>
             <g>
                 <path d="m462.85,193.66c0,.05.02.1.02.15,0,1.72-2.79,3.17-6.09,3.17s-6.09-1.45-6.09-3.17c0-.05.01-.1.02-.15-.23-.19-.43-.39-.61-.6-.08.24-.12.49-.12.75,0,2.18,2.99,3.9,6.81,3.9s6.81-1.71,6.81-3.9c0-.26-.04-.51-.12-.75-.18.21-.38.41-.61.6Z" style={{fill: '#fff', strokeWidth: 0,}}></path>
                 <path d="m462.85,190.72c0,.05.02.1.02.15,0,1.72-2.79,3.17-6.09,3.17s-6.09-1.45-6.09-3.17c0-.05.01-.1.02-.15-.23-.19-.43-.39-.61-.6-.08.24-.12.49-.12.75,0,2.18,2.99,3.9,6.81,3.9s6.81-1.71,6.81-3.9c0-.26-.04-.51-.12-.75-.18.21-.38.41-.61.6Z" style={{fill: '#fff', strokeWidth: 0,}}></path>
                 <path d="m456.78,191.83c3.82,0,6.81-1.71,6.81-3.9s-2.99-3.9-6.81-3.9-6.81,1.71-6.81,3.9,2.99,3.9,6.81,3.9Zm0-7.07c3.3,0,6.09,1.45,6.09,3.18s-2.79,3.17-6.09,3.17-6.09-1.45-6.09-3.17,2.79-3.18,6.09-3.18Z" style={{fill: '#fff', strokeWidth: 0,}}></path>
             </g>
-            <circle cx="496.47" cy="197.04" r="12.84" style={{fill: '#f56682', stroke: '#fff', strokeMiterlimit: 10, strokeWidth: '.5px'}}></circle>
+            <circle cx="496.47" cy="197.04" r="12.84" style={{fill: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b' : '#9b9b9b', stroke: '#fff', strokeMiterlimit: 10, strokeWidth: '.5px'}}></circle>
             <g>
-                <circle cx="91.47" cy="190.76" r="12.84" style={{fill: '#f56682', stroke: '#fff', strokeMiterlimit: 10, strokeWidth: '.5px'}}></circle>
+                <circle cx="91.47" cy="190.76" r="12.84" style={{fill: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b' : '#9b9b9b', stroke: '#fff', strokeMiterlimit: 10, strokeWidth: '.5px'}}></circle>
                 <g>
                     <g>
-                        <line class="threat-arrow" x1="124" y1="217" x2="57.65" y2="201.2" style={{fill: 'none', stroke: '#f56682', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '16px', animation: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? 'upwardAnimation 1s linear infinite' : 'none'}}></line>
+                        <line class="threat-arrow" x1="124" y1="217" x2="57.65" y2="201.2" style={{fill: 'none', stroke: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b' : '#9b9b9b', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '16px', animation: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? 'upwardAnimation 1s linear infinite' : 'none'}}></line>
                     </g>
-                    <polyline points="123.25 220.45 127.36 218.09 125.29 213.5" style={{fill: "none", stroke: '#f56682', strokeLinecap: "round", strokeMiterlimit: 10,}}></polyline>
+                    <polyline points="123.25 220.45 127.36 218.09 125.29 213.5" style={{fill: "none", stroke: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b' : '#9b9b9b', strokeLinecap: "round", strokeMiterlimit: 10,}}></polyline>
                 </g>
                 <g>
                     <g>
-                        <line class="threat-arrow" x1="165" y1="210.5" x2="98.02" y2="194.5" style={{fill: 'none', stroke: '#f56682', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '16px', animation: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? 'upwardAnimation 1s linear infinite' : 'none'}}></line>
+                        <line class="threat-arrow" x1="165" y1="210.5" x2="98.02" y2="194.5" style={{fill: 'none', stroke: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b' : '#9b9b9b', strokeDasharray: '0, 0, 3, 3', strokeLinecap: 'round', strokeDashoffset: '16px', animation: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? 'upwardAnimation 1s linear infinite' : 'none'}}></line>
                     </g>
-                    <polyline points="163.62 213.76 167.73 211.39 165.66 206.8" style={{fill: "none", stroke: '#f56682', strokeLinecap: "round", strokeMiterlimit: 10,}}></polyline>
+                    <polyline points="163.62 213.76 167.73 211.39 165.66 206.8" style={{fill: "none", stroke: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b' : '#9b9b9b', strokeLinecap: "round", strokeMiterlimit: 10,}}></polyline>
                 </g>
                 <g>
                     <path d="m85.32,193.66c0,.05-.02.1-.02.15,0,1.72,2.79,3.17,6.09,3.17s6.09-1.45,6.09-3.17c0-.05-.01-.1-.02-.15.23-.19.43-.39.61-.6.08.24.12.49.12.75,0,2.18-2.99,3.9-6.81,3.9s-6.81-1.71-6.81-3.9c0-.26.04-.51.12-.75.18.21.38.41.61.6Z" style={{fill: '#fff', strokeWidth: 0,}}></path>
                     <path d="m85.32,190.72c0,.05-.02.1-.02.15,0,1.72,2.79,3.17,6.09,3.17s6.09-1.45,6.09-3.17c0-.05-.01-.1-.02-.15.23-.19.43-.39.61-.6.08.24.12.49.12.75,0,2.18-2.99,3.9-6.81,3.9s-6.81-1.71-6.81-3.9c0-.26.04-.51.12-.75.18.21.38.41.61.6Z" style={{fill: '#fff', strokeWidth: 0,}}></path>
                     <path d="m98.2,187.93c0-2.18-2.99-3.9-6.81-3.9s-6.81,1.71-6.81,3.9c0,2.18,2.99,3.9,6.81,3.9s6.81-1.71,6.81-3.9Zm-.72,0c0,1.72-2.79,3.17-6.09,3.17s-6.09-1.45-6.09-3.17,2.79-3.18,6.09-3.18,6.09,1.45,6.09,3.18Z" style={{fill: '#fff', strokeWidth: 0,}}></path>
                 </g>
-                <circle cx="51.7" cy="197.04" r="12.84" style={{fill: '#f56682', stroke: '#fff', strokeMiterlimit: 10, strokeWidth: '.5px'}}></circle>
+                <circle cx="51.7" cy="197.04" r="12.84" style={{fill: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b' : '#9b9b9b', stroke: '#fff', strokeMiterlimit: 10, strokeWidth: '.5px'}}></circle>
                 <g>
                     <path d="m45.7,200.08c0,.05-.02.1-.02.15,0,1.72,2.79,3.17,6.09,3.17s6.09-1.45,6.09-3.17c0-.05-.01-.1-.02-.15.23-.19.43-.39.61-.6.08.24.12.49.12.75,0,2.18-2.99,3.9-6.81,3.9s-6.81-1.71-6.81-3.9c0-.26.04-.51.12-.75.18.21.38.41.61.6Z" style={{fill: '#fff', strokeWidth: 0,}}></path>
                     <path d="m45.7,197.14c0,.05-.02.1-.02.15,0,1.72,2.79,3.17,6.09,3.17s6.09-1.45,6.09-3.17c0-.05-.01-.1-.02-.15.23-.19.43-.39.61-.6.08.24.12.49.12.75,0,2.18-2.99,3.9-6.81,3.9s-6.81-1.71-6.81-3.9c0-.26.04-.51.12-.75.18.21.38.41.61.6Z" style={{fill: '#fff', strokeWidth: 0,}}></path>
@@ -3474,19 +3484,19 @@ const Animation = () => {
             <path d="m132.57,277.86c1.93,0,1.93-3,0-3s-1.93,3,0,3h0Z" style={{fill: '#fff', strokeWidth: 0,}}></path>
             <g class="dsm-circles">
                 <g class="dsm-circle-group">
-                    <ellipse cx="150" cy="237" rx="30.090667" ry="7.522667" style={{fill: 'none', stroke: '#f56682', strokeMiterlimit: 10, strokeWidth: '0.5px', transformOrigin: '0px 0px', translate: 'none', rotate: 'none', scale: 'none', opacity: '0.1193'}} data-svg-origin="150 237" transform="matrix(1,0,0,1,0,0)"></ellipse>
-                    <ellipse cx="150" cy="237" rx="15.045333" ry="3.761333" style={{fill: 'none', stroke: '#f56682', strokeMiterlimit: 10, strokeWidth: '0.5px', transformOrigin: '0px 0px', translate: 'none', rotate: 'none', scale: 'none', }} data-svg-origin="150 237" transform="matrix(1,0,0,1,0,0)"></ellipse>
-                    <ellipse cx="150" cy="237" rx="7.522667" ry="1.880667" style={{fill: 'none', stroke: '#f56682', strokeMiterlimit: 10, strokeWidth: '0.5px', transformOrigin: '0px 0px', translate: 'none', rotate: 'none', scale: 'none', opacity: '0.1193'}} data-svg-origin="150 237" transform="matrix(1,0,0,1,0,0)"></ellipse>
+                    <ellipse cx="150" cy="237" rx="30.090667" ry="7.522667" style={{fill: 'none', stroke: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b', strokeMiterlimit: 10, strokeWidth: '0.5px', transformOrigin: '0px 0px', translate: 'none', rotate: 'none', scale: 'none', opacity: '0.1193'}} data-svg-origin="150 237" transform="matrix(1,0,0,1,0,0)"></ellipse>
+                    <ellipse cx="150" cy="237" rx="15.045333" ry="3.761333" style={{fill: 'none', stroke: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b', strokeMiterlimit: 10, strokeWidth: '0.5px', transformOrigin: '0px 0px', translate: 'none', rotate: 'none', scale: 'none', }} data-svg-origin="150 237" transform="matrix(1,0,0,1,0,0)"></ellipse>
+                    <ellipse cx="150" cy="237" rx="7.522667" ry="1.880667" style={{fill: 'none', stroke: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b', strokeMiterlimit: 10, strokeWidth: '0.5px', transformOrigin: '0px 0px', translate: 'none', rotate: 'none', scale: 'none', opacity: '0.1193'}} data-svg-origin="150 237" transform="matrix(1,0,0,1,0,0)"></ellipse>
                 </g>
                 <g class="dsm-circle-group">
-                    <ellipse cx="197" cy="223" rx="22.568" ry="5.642" style={{fill: 'none', stroke: '#f56682', strokeMiterlimit: 10, strokeWidth: '0.5px', transformOrigin: '0px 0px', translate: 'none', rotate: 'none', scale: 'none', opacity: '0.1193'}} data-svg-origin="197 223" transform="matrix(1,0,0,1,0,0)"></ellipse>
-                    <ellipse cx="197" cy="223" rx="11.284" ry="2.821" style={{fill: 'none', stroke: '#f56682', strokeMiterlimit: 10, strokeWidth: '0.5px', transformOrigin: '0px 0px', translate: 'none', rotate: 'none', scale: 'none', opacity: '0.1193'}} data-svg-origin="197 223" transform="matrix(1,0,0,1,0,0)"></ellipse>
-                    <ellipse cx="197" cy="223" rx="5.642" ry="1.4105" style={{fill: 'none', stroke: '#f56682', strokeMiterlimit: 10, strokeWidth: '0.5px', transformOrigin: '0px 0px', translate: 'none', rotate: 'none', scale: 'none', opacity: '0.1193'}} data-svg-origin="197 223" transform="matrix(1,0,0,1,0,0)"></ellipse>
+                    <ellipse cx="197" cy="223" rx="22.568" ry="5.642" style={{fill: 'none', stroke: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b', strokeMiterlimit: 10, strokeWidth: '0.5px', transformOrigin: '0px 0px', translate: 'none', rotate: 'none', scale: 'none', opacity: '0.1193'}} data-svg-origin="197 223" transform="matrix(1,0,0,1,0,0)"></ellipse>
+                    <ellipse cx="197" cy="223" rx="11.284" ry="2.821" style={{fill: 'none', stroke: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b', strokeMiterlimit: 10, strokeWidth: '0.5px', transformOrigin: '0px 0px', translate: 'none', rotate: 'none', scale: 'none', opacity: '0.1193'}} data-svg-origin="197 223" transform="matrix(1,0,0,1,0,0)"></ellipse>
+                    <ellipse cx="197" cy="223" rx="5.642" ry="1.4105" style={{fill: 'none', stroke: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b', strokeMiterlimit: 10, strokeWidth: '0.5px', transformOrigin: '0px 0px', translate: 'none', rotate: 'none', scale: 'none', opacity: '0.1193'}} data-svg-origin="197 223" transform="matrix(1,0,0,1,0,0)"></ellipse>
                 </g>
                 <g class="dsm-circle-group">
-                    <ellipse cx="281" cy="274" rx="22.568" ry="5.642" style={{fill: 'none', stroke: '#f56682', strokeMiterlimit: 10, strokeWidth: '0.5px', transformOrigin: '0px 0px', translate: 'none', rotate: 'none', scale: 'none', opacity: '0.1193'}} data-svg-origin="281 274" transform="matrix(1,0,0,1,0,0)"></ellipse>
-                    <ellipse cx="281" cy="274" rx="11.284" ry="2.821" style={{fill: 'none', stroke: '#f56682', strokeMiterlimit: 10, strokeWidth: '0.5px', transformOrigin: '0px 0px', translate: 'none', rotate: 'none', scale: 'none', opacity: '0.1193'}} data-svg-origin="281 274" transform="matrix(1,0,0,1,0,0)"></ellipse>
-                    <ellipse cx="281" cy="274" rx="5.642" ry="1.4105" style={{fill: 'none', stroke: '#f56682', strokeMiterlimit: 10, strokeWidth: '0.5px', transformOrigin: '0px 0px', translate: 'none', rotate: 'none', scale: 'none', opacity: '0.1193'}} data-svg-origin="281 274" transform="matrix(1,0,0,1,0,0)"></ellipse>
+                    <ellipse cx="281" cy="274" rx="22.568" ry="5.642" style={{fill: 'none', stroke: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b', strokeMiterlimit: 10, strokeWidth: '0.5px', transformOrigin: '0px 0px', translate: 'none', rotate: 'none', scale: 'none', opacity: '0.1193'}} data-svg-origin="281 274" transform="matrix(1,0,0,1,0,0)"></ellipse>
+                    <ellipse cx="281" cy="274" rx="11.284" ry="2.821" style={{fill: 'none', stroke: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b', strokeMiterlimit: 10, strokeWidth: '0.5px', transformOrigin: '0px 0px', translate: 'none', rotate: 'none', scale: 'none', opacity: '0.1193'}} data-svg-origin="281 274" transform="matrix(1,0,0,1,0,0)"></ellipse>
+                    <ellipse cx="281" cy="274" rx="5.642" ry="1.4105" style={{fill: 'none', stroke: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b', strokeMiterlimit: 10, strokeWidth: '0.5px', transformOrigin: '0px 0px', translate: 'none', rotate: 'none', scale: 'none', opacity: '0.1193'}} data-svg-origin="281 274" transform="matrix(1,0,0,1,0,0)"></ellipse>
                 </g>
                 <g class="dsm-circle-group">
                     <ellipse cx="213" cy="246" rx="30.090667" ry="7.522667" style={{fill: 'none', stroke: 'rgb(224, 29, 141)', strokeMiterlimit: 10, strokeWidth: '0.5px', transformOrigin: '0px 0px', translate: 'none', rotate: 'none', scale: 'none', opacity: '0.1193'}} data-svg-origin="213 246" transform="matrix(1,0,0,1,0,0)"></ellipse>
@@ -3505,16 +3515,16 @@ const Animation = () => {
                 </g>
                 <g class="dsm-circle-group">
                     <ellipse cx="360" cy="222" rx="22.568" ry="5.642" style={{fill: 'none', stroke: 'rgb(224, 29, 141)', strokeMiterlimit: 10, strokeWidth: '0.5px', transformOrigin: '0px 0px', translate: 'none', rotate: 'none', scale: 'none', opacity: '0.1193'}} data-svg-origin="360 222" transform="matrix(1,0,0,1,0,0)"></ellipse>
-                    <ellipse cx="360" cy="222" rx="11.284" ry="2.821" style={{fill: 'none', stroke: '#f56682', strokeMiterlimit: 10, strokeWidth: '0.5px', transformOrigin: '0px 0px', translate: 'none', rotate: 'none', scale: 'none', opacity: '0.1193'}} data-svg-origin="360 222" transform="matrix(1,0,0,1,0,0)"></ellipse>
-                    <ellipse cx="360" cy="222" rx="5.642" ry="1.4105" style={{fill: 'none', stroke: '#f56682', strokeMiterlimit: 10, strokeWidth: '0.5px', transformOrigin: '0px 0px', translate: 'none', rotate: 'none', scale: 'none', opacity: '0.1193'}} data-svg-origin="360 222" transform="matrix(1,0,0,1,0,0)"></ellipse>
+                    <ellipse cx="360" cy="222" rx="11.284" ry="2.821" style={{fill: 'none', stroke: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b', strokeMiterlimit: 10, strokeWidth: '0.5px', transformOrigin: '0px 0px', translate: 'none', rotate: 'none', scale: 'none', opacity: '0.1193'}} data-svg-origin="360 222" transform="matrix(1,0,0,1,0,0)"></ellipse>
+                    <ellipse cx="360" cy="222" rx="5.642" ry="1.4105" style={{fill: 'none', stroke: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b', strokeMiterlimit: 10, strokeWidth: '0.5px', transformOrigin: '0px 0px', translate: 'none', rotate: 'none', scale: 'none', opacity: '0.1193'}} data-svg-origin="360 222" transform="matrix(1,0,0,1,0,0)"></ellipse>
                 </g>
-                <circle cx="150" cy="236" r="2.5" style={{fill: '#f56682'}}></circle>
-                <circle cx="197" cy="222" r="2.5" style={{fill: '#f56682'}}></circle>
-                <circle cx="281" cy="273" r="2.5" style={{fill: '#f56682'}}></circle>
-                <circle cx="213" cy="245" r="3" style={{fill: '#f56682'}}></circle>
-                <circle cx="332" cy="253" r="3" style={{fill: '#f56682'}}></circle>
-                <circle cx="311" cy="215" r="2.5" style={{fill: '#f56682'}}></circle>
-                <circle cx="360" cy="221" r="2.5" style={{fill: '#f56682'}}></circle>
+                <circle cx="150" cy="236" r="2.5" style={{fill: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b'}}></circle>
+                <circle cx="197" cy="222" r="2.5" style={{fill: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b'}}></circle>
+                <circle cx="281" cy="273" r="2.5" style={{fill: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b'}}></circle>
+                <circle cx="213" cy="245" r="3" style={{fill: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b'}}></circle>
+                <circle cx="332" cy="253" r="3" style={{fill: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b'}}></circle>
+                <circle cx="311" cy="215" r="2.5" style={{fill: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b'}}></circle>
+                <circle cx="360" cy="221" r="2.5" style={{fill: currentIndex === 0 || currentIndex === 4 || currentIndex === 5 ? '#f56682' : '#9b9b9b'}}></circle>
             </g>
 
         </g>
@@ -3748,8 +3758,8 @@ const Animation = () => {
             <line x1="69.78" y1="114" x2="69.78" y2="454" style={{fill: 'none', stroke: '#f56682', strokeDasharray: '0 0 3 3', strokeLinecap: 'round', animation: currentIndex === 8 ? 'downwardAnimation 1s linear infinite' : 'none'}}></line>
             <line x1="130.9" y1="130" x2="130.9" y2="470" style={{fill: 'none', stroke: '#f56682', strokeDasharray: '0 0 3 3', strokeLinecap: 'round', animation: currentIndex === 8 ? 'downwardAnimation 1s linear infinite' : 'none'}}></line>
             <line x1="192.01" y1="144" x2="192.01" y2="484" style={{fill: 'none', stroke: '#f56682', strokeDasharray: '0 0 3 3', strokeLinecap: 'round', animation: currentIndex === 8 ? 'downwardAnimation 1s linear infinite' : 'none'}}></line>
-            <line x1="253.13" y1="158" x2="253.13" y2="498" style={{fill: 'none', stroke: '#f56682', strokeDasharray: '0 0 3 3', strokeLinecap: 'round', animation: currentIndex === 8 ? 'downwardAnimation 1s linear infinite' : 'none'}}></line>
-            <line x1="314.25" y1="158" x2="314.25" y2="498" style={{fill: 'none', stroke: '#f56682', strokeDasharray: '0 0 3 3', strokeLinecap: 'round', animation: currentIndex === 8 ? 'downwardAnimation 1s linear infinite' : 'none'}}></line>
+            <line x1="253.13" y1="158" x2="253.13" y2="498" style={{fill: 'none', stroke:  '#f56682', strokeDasharray: '0 0 3 3', strokeLinecap: 'round', animation: currentIndex === 8 ? 'downwardAnimation 1s linear infinite' : 'none'}}></line>
+            <line x1="314.25" y1="158" x2="314.25" y2="498" style={{fill: 'none', stroke:'#f56682' , strokeDasharray: '0 0 3 3', strokeLinecap: 'round', animation: currentIndex === 8 ? 'downwardAnimation 1s linear infinite' : 'none'}}></line>
             <line x1="375.36" y1="144" x2="375.36" y2="483" style={{fill: 'none', stroke: '#f56682', strokeDasharray: '0 0 3 3', strokeLinecap: 'round', animation: currentIndex === 8 ? 'downwardAnimation 1s linear infinite' : 'none'}}></line>
             <line x1="436.48" y1="126" x2="436.48" y2="470" style={{fill: 'none', stroke: '#f56682', strokeDasharray: '0 0 3 3', strokeLinecap: 'round', animation: currentIndex === 8 ? 'downwardAnimation 1s linear infinite' : 'none'}}></line>
             <line x1="497.6" y1="110" x2="497.6" y2="453" style={{fill: 'none', stroke: '#f56682', strokeDasharray: '0 0 3 3', strokeLinecap: 'round', animation: currentIndex === 8 ? 'downwardAnimation 1s linear infinite' : 'none'}}></line>
@@ -3758,10 +3768,10 @@ const Animation = () => {
             <polyline points="439.68 469.74 436.33 473.09 432.97 469.74" style={{fill: 'none', stroke: '#f56682', strokeLinecap: 'round', strokeMiterlimit: 10}}></polyline>
             <polyline points="378.66 484.04 375.3 487.39 371.95 484.04" style={{fill: 'none', stroke: '#f56682', strokeLinecap: 'round', strokeMiterlimit: 10}}></polyline>
             <polyline points="317.54 498.34 314.19 501.7 310.83 498.34" style={{fill: 'none', stroke: '#f56682', strokeLinecap: 'round', strokeMiterlimit: 10}}></polyline>
-            <polyline points="256.43 498.32 253.07 501.67 249.72 498.32" style={{fill: 'none', stroke: '#f56682', strokeLinecap: 'round', strokeMiterlimit: 10}}></polyline>
+            <polyline points="256.43 498.32 253.07 501.67 249.72 498.32" style={{fill: 'none', stroke:'#f56682', strokeLinecap: 'round', strokeMiterlimit: 10}}></polyline>
             <polyline points="195.31 483.92 191.96 487.28 188.6 483.92" style={{fill: 'none', stroke: '#f56682', strokeLinecap: 'round', strokeMiterlimit: 10}}></polyline>
             <polyline points="134.19 468.5 130.84 471.86 127.48 468.5" style={{fill: 'none', stroke: '#f56682', strokeLinecap: 'round', strokeMiterlimit: 10}}></polyline>
-            <polyline points="72.98 453.36 69.63 456.72 66.28 453.36" style={{fill: 'none', stroke: '#f56682', strokeLinecap: 'round', strokeMiterlimit: 10}}></polyline>
+            <polyline points="72.98 453.36 69.63 456.72 66.28 453.36" style={{fill: 'none', stroke:  '#f56682', strokeLinecap: 'round', strokeMiterlimit: 10}}></polyline>
 
             <g data-name="Rem-arrowTips">
                 <polyline points="500.98 103.52 497.63 106.88 494.27 103.52" style={{fill: 'none', stroke: '#f56682', strokeLinecap: 'round', strokeMiterlimit: 10}}></polyline>
@@ -3770,7 +3780,7 @@ const Animation = () => {
                 <polyline points="317.54 151.9 314.19 155.26 310.83 151.9" style={{fill: 'none', stroke: '#f56682', strokeLinecap: 'round', strokeMiterlimit: 10}}></polyline>
                 <polyline points="256.43 151.88 253.07 155.24 249.72 151.88" style={{fill: 'none', stroke: '#f56682', strokeLinecap: 'round', strokeMiterlimit: 10}}></polyline>
                 <polyline points="195.31 137.49 191.96 140.84 188.6 137.49" style={{fill: 'none', stroke: '#f56682', strokeLinecap: 'round', strokeMiterlimit: 10}}></polyline>
-                <polyline points="134.19 122.07 130.84 125.42 127.48 122.07" style={{fill: 'none', stroke: '#f56682', strokeLinecap: 'round', strokeMiterlimit: 10}}></polyline>
+                <polyline points="134.19 122.07 130.84 125.42 127.48 122.07" style={{fill: 'none', stroke:  '#f56682', strokeLinecap: 'round', strokeMiterlimit: 10}}></polyline>
                 <polyline points="72.98 106.93 69.63 110.28 66.28 106.93" style={{fill: 'none', stroke: '#f56682', strokeLinecap: 'round', strokeMiterlimit: 10}}></polyline>
             </g>
         </g>

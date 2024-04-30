@@ -276,3 +276,40 @@ body{
 .solution-path-labels-inactive{
   transition: 1.8s ease-in-out;
 }
+
+
+
+.real-env-icon.bounce {
+  animation-name: bounce;
+  animation-timing-function: ease;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+.real-env-icon-shadow.shadow-scale {
+  animation-name: shadow-scale;
+  animation-timing-function: ease;
+}
+
+@keyframes shadow-scale {
+  0% {
+    transform: scale(2);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
