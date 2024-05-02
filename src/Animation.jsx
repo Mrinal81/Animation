@@ -300,9 +300,9 @@ const Animation = () => {
 
     
   return (
-    <div className='container flex justify-center items-start w-full h-[99.9vh]'>
+    <div className='container flex justify-center items-center w-full h-[99.9vh]'>
     <div className='flex w-full h-[88vh] px-8'>
-      <div className="left w-[60%] flex justify-center items-center overflow-x-hidden">
+      <div className="left w-[60%] flex justify-center items-start overflow-x-hidden">
      
       <svg id="ctem-svg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="800" height="650" viewBox="0 0 710 550">
 
