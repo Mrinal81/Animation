@@ -9,7 +9,7 @@ import secondImage from './assets/secondImage.jpg'
 const contentData = [
     {
         image: secondImage,
-        verticalDivHeight: '92vh',
+        verticalDivHeight: '105vh',
         content: (
             <>
               <div className='firstPart section' id='firstPart'>
