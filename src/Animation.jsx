@@ -125,7 +125,7 @@ const contentData = [
             {/* <div className='absolute w-1.5 rounded-full bg-[#f5f5f5] h-[90vh] vertical-div'/> */}
             <div className='px-8'>
                 <div className='flex gap-4'>
-                    <div className='w-6 h-4 mt-2 bg-[#008cc1] rounded-full'></div>
+                    <div className='w-6 h-6 mt-2 bg-[#008cc1] rounded-full'></div>
                 <h1 className='text-2xl font-bold'>Threat Intelligence & Prioritized Exposure</h1>
                 </div>
                 <div className='mt-12'>
@@ -226,7 +226,7 @@ const contentData = [
             {/* <div className='absolute w-1.5 rounded-full bg-[#f5f5f5] h-[58vh] vertical-div'/> */}
             <div className='px-8'>
                 <div className='flex gap-4 items-center'>
-                    <div className='w-6 h-4 bg-[#3fbdac] rounded-full'></div>
+                    <div className='w-6 h-6 bg-[#3fbdac] rounded-full'></div>
                 <h1 className='text-2xl font-bold'>Remediation and change automation</h1>
                 </div>
                 <div className='mt-4'>
