@@ -300,7 +300,7 @@ const Animation = () => {
 
     
   return (
-    <div className='container flex justify-center items-center w-full h-[99.9vh]'>
+    <div className='container flex justify-center items-start w-full h-[99.9vh]'>
     <div className='flex w-full h-[88vh] px-8'>
       <div className="left w-[60%] flex justify-center items-center overflow-x-hidden">
      
