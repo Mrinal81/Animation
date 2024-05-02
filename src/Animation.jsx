@@ -9,7 +9,7 @@ import secondImage from './assets/secondImage.jpg'
 const contentData = [
     {
         image: secondImage,
-        verticalDivHeight: '105vh',
+        verticalDivHeight: '102vh',
         content: (
             <>
               <div className='firstPart section' id='firstPart'>
@@ -31,7 +31,7 @@ const contentData = [
     {
 
         image: firstImage,
-        verticalDivHeight: '58vh',
+        verticalDivHeight: '64vh',
         content: (
             <>
              <div className="secondPart mt-24 section" id='secondPart'>
@@ -55,7 +55,7 @@ const contentData = [
     {
 
         image: secondImage,
-        verticalDivHeight: '60vh',
+        verticalDivHeight: '72vh',
         content: (
             <>
              <div className="thirdPart mt-24 section" id='thirdPart'>
@@ -74,7 +74,7 @@ const contentData = [
     {
 
         image: firstImage,
-        verticalDivHeight: '54vh',
+        verticalDivHeight: '64vh',
         content: (
             <>
              <div className="fourthPart mt-24 section" id='fourthPart'>
@@ -93,7 +93,7 @@ const contentData = [
     {
 
         image: secondImage,
-        verticalDivHeight: '68vh',
+        verticalDivHeight: '88vh',
         content: (
             <>
               <div className="fifthPart mt-24 section" id='fifthPart'>
@@ -118,7 +118,7 @@ const contentData = [
     {
 
         image: firstImage,
-        verticalDivHeight: '88vh',
+        verticalDivHeight: '94vh',
         content: (
             <>
                <div className="sixthPart mt-24 section" id='sixthPart'>
@@ -150,7 +150,7 @@ const contentData = [
     {
 
         image: secondImage,
-        verticalDivHeight: '50vh',
+        verticalDivHeight: '58vh',
         content: (
             <>
               <div className="seventhPart mt-24 section" id='seventhPart'>
@@ -174,7 +174,7 @@ const contentData = [
     },
     {
         image: firstImage,
-        verticalDivHeight: '86vh',
+        verticalDivHeight: '92vh',
         content: (
             <>
                <div className="eightPart mt-24 section" id='eightPart'>
@@ -219,7 +219,7 @@ const contentData = [
     },
     {
         image: secondImage,
-        verticalDivHeight: '58vh',
+        verticalDivHeight: '64vh',
         content: (
             <>
               <div className="ninthPart mt-24 section" id='ninthPart'>
