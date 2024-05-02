@@ -55,7 +55,7 @@ const contentData = [
     {
 
         image: secondImage,
-        verticalDivHeight: '72vh',
+        verticalDivHeight: '70vh',
         content: (
             <>
              <div className="thirdPart mt-24 section" id='thirdPart'>
@@ -74,7 +74,7 @@ const contentData = [
     {
 
         image: firstImage,
-        verticalDivHeight: '64vh',
+        verticalDivHeight: '66vh',
         content: (
             <>
              <div className="fourthPart mt-24 section" id='fourthPart'>
@@ -118,7 +118,7 @@ const contentData = [
     {
 
         image: firstImage,
-        verticalDivHeight: '94vh',
+        verticalDivHeight: '96vh',
         content: (
             <>
                <div className="sixthPart mt-24 section" id='sixthPart'>
@@ -174,7 +174,7 @@ const contentData = [
     },
     {
         image: firstImage,
-        verticalDivHeight: '92vh',
+        verticalDivHeight: '94vh',
         content: (
             <>
                <div className="eightPart mt-24 section" id='eightPart'>
@@ -219,7 +219,7 @@ const contentData = [
     },
     {
         image: secondImage,
-        verticalDivHeight: '64vh',
+        verticalDivHeight: '66vh',
         content: (
             <>
               <div className="ninthPart mt-24 section" id='ninthPart'>
